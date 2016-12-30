@@ -1,0 +1,276 @@
+/* 清除内外边距 */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+
+/* structural elements 结构元素 */
+
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+
+/* list elements 列表元素 */
+
+pre,
+
+/* text formatting elements 文本格式元素 */
+
+fieldset,
+lengend,
+button,
+input,
+textarea,
+
+/* form elements 表单元素 */
+
+th,
+td {
+    /* table elements 表格元素 */
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 设置默认字体 */
+
+body,
+button,
+input,
+select,
+textarea {
+    /* for ie */
+    /*font: 12px/1 Tahoma, Helvetica, Arial, "宋体", sans-serif;*/
+    font: 12px/1 Tahoma, Helvetica, Arial, '\5b8b\4f53', sans-serif;
+    /* 用 ascii 字符表示，使得在任何编码下都无问题 */
+}
+
+h1 {
+    font-size: 18px;
+    /* 18px / 12px = 1.5 */
+}
+
+h2 {
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+address,
+cite,
+dfn,
+em,
+var {
+    font-style: normal;
+}
+
+
+/* 将斜体扶正 */
+
+code,
+kbd,
+pre,
+samp,
+tt {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* 统一等宽字体 */
+
+small {
+    font-size: 12px;
+}
+
+
+/* 小于 12px 的中文很难阅读，让 small 正常化 */
+
+
+/* 重置列表元素 */
+
+ul,
+ol {
+    list-style: none;
+}
+
+
+/* 重置文本格式元素 */
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+abbr[title],
+acronym[title] {
+    cursor: help;
+    /* 注：1.ie6 不支持 abbr; 2.这里用了属性选择符，ie6 下无效果 */
+    border-bottom: 1px dotted;
+}
+
+q:before,
+q:after {
+    content: '';
+}
+
+
+/* 重置表单元素 */
+
+legend {
+    color: #000;
+}
+
+
+/* for ie6 */
+
+fieldset,
+img {
+    border: none;
+}
+
+
+/* img 搭车：让链接里的 img 无边框 */
+
+
+/* 注：optgroup 无法扶正 */
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+    /* 使得表单元素在 ie 下能继承字体大小 */
+}
+
+
+/* 重置表格元素 */
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+
+/* 重置 hr */
+
+hr {
+    height: 1px;
+    border: none;
+}
+
+
+/* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
+
+html {
+    overflow-y: scroll;
+}
+/*------------------------------------------------定义的字体------------------------------------------------------------*/
+
+
+  @font-face {
+    font-family: 'helvetica';
+    src: 
+	 url('../fonts/helveticaneue.woff') format('woff'),
+	 url('../fonts/HelveticaNeue.ttf') format('truetype'),
+	 url('../fonts/helveticaneue.eot') format('truetype'),
+    font-weight: normal;
+    font-style: normal;
+  }
+/*--------------------------------------------------------------------------------*/
+/* ---------------------------------------------case 开始-----------------------------------------------------*/
+
+.caseList {
+    width: 100%;
+    opacity: .75;
+    background: #000b19;
+}
+
+.ca_pagehead {
+	font-family:  helvetica;
+	font-size: 50px;
+	color: #FFFFFF;
+	letter-spacing: -1.12px;
+    margin:262px auto 0;
+    width:1117px;
+    line-height:60px;
+} 
+
+/* inline-block左右间距问题*/
+
+.caseList ul.cases {
+    font-size: 0;
+    margin: 0 auto;
+    width:90%;
+    margin-top:80px;
+}
+
+
+/* 3像素问题*/
+
+.caseList ul.cases li {
+    font-size: 0;
+    line-height: 0;
+    display: inline-block;
+    position: relative;
+    width:33.33%;
+
+}
+.caseList ul.cases li img {
+	width:100%;
+}
+.caseList .cases li .case_mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial helvetica;
+    font-size: 36px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+
+.ca_txt {
+    line-height:29px;
+    margin-top:164px;
+    font-size: 24px;
+    font-family: helvetica;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+.ca_txt  p:nth-child(2) {
+    margin-top:10px;
+}
+.ca_viewmore {
+    margin:57px auto;
+    border:1px solid #fff;
+    line-height: 1;
+    width:165px;
+    height:39px;
+    padding:9px ;
+    font-size: 20px;
+}
+/* ---------------------------------------------case 结束-----------------------------------------------------*/
+
+
