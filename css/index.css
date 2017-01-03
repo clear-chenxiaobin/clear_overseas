@@ -1,9 +1,43 @@
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 1250px) {
+    .container {
+        width: 1210px;
+    }
+}
+@media (min-width: 1800px) {
+    .container {
+        width: 1790px;
+    }
+}
+
+/*PC端*/
+@media (min-width: 768px) {
+    /* logo */
+    #fh5co-logo > a > img {
+        width: 80px;
+        height: 33px;
+    }
+}
+
+/*手机端*/
+@media (max-width: 768px) {
+    /* logo */
+    #fh5co-logo > a > img {
+        width: 60px;
+        height: 23px;
+    }
+}
+
 #fh5co-header > .container {
-    height:100%;
+    height: 100%;
 }
 
 #fh5co-header > .container > .row {
-    height:100%;
+    height: 100%;
 }
 
 #index-hello-parent {
