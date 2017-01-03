@@ -185,26 +185,10 @@ hr {
 html {
     overflow-y: scroll;
 }
-/*------------------------------------------------定义的字体------------------------------------------------------------*/
 
-
-  @font-face {
-    font-family: 'helvetica';
-    src: 
-	 url('../fonts/helveticaneue.woff') format('woff'),
-	 url('../fonts/HelveticaNeue.ttf') format('truetype'),
-	 url('../fonts/helveticaneue.eot') format('truetype'),
-    font-weight: normal;
-    font-style: normal;
-  }
-/*--------------------------------------------------------------------------------*/
 /* ---------------------------------------------case 开始-----------------------------------------------------*/
 
-.caseList {
-    width: 100%;
-    opacity: .75;
-    background: #000b19;
-}
+
 
 .ca_pagehead {
 	font-family:  helvetica;
@@ -215,6 +199,12 @@ html {
     width:1117px;
     line-height:60px;
 } 
+
+.caseList {
+    width: 100%;
+    opacity: .75;
+    background: #000b19;
+}
 
 /* inline-block左右间距问题*/
 
@@ -239,6 +229,10 @@ html {
 .caseList ul.cases li img {
 	width:100%;
 }
+.caseList ul.cases li:hover .case_mask   {
+   opacity: .5;
+   filter:alpha(opacity=50);
+}
 .caseList .cases li .case_mask {
     position: absolute;
     top: 0;
@@ -247,8 +241,12 @@ html {
     height: 100%;
     font-family: Arial helvetica;
     font-size: 36px;
-    color: #FFFFFF;
+    color: #000;
     letter-spacing: 0;
+    opacity: 0;
+    filter:alpha(opacity=0);
+    display: block;
+    color:#fff;
 }
 
 .ca_txt {
@@ -258,6 +256,7 @@ html {
     font-family: helvetica;
     color: #FFFFFF;
     letter-spacing: 0;
+    
 }
 .ca_txt  p:nth-child(2) {
     margin-top:10px;
@@ -270,6 +269,87 @@ html {
     height:39px;
     padding:9px ;
     font-size: 20px;
+
+
+}
+/*手机端*/
+@media screen and (max-width: 768px) {
+
+    .ca_pagehead {
+        font-size: 28px;
+        
+        margin:213px auto 0;
+        width:341px;
+        height:99px;
+        line-height:34px;
+
+
+        font-size: 28px;
+        color: #FFFFFF;
+        letter-spacing: -0.63px;
+    } 
+    .caseList {
+        width: 100%;
+        opacity: .75;
+        background: #000b19;
+    }
+
+    /* inline-block左右间距问题*/
+
+    .caseList ul.cases {
+        font-size: 0;
+        margin: 0 auto;
+        width:90%;
+        margin-top:80px;
+    }
+
+
+    /* 3像素问题*/
+
+    .caseList ul.cases li {
+        font-size: 0;
+        line-height: 0;
+        display: inline-block;
+        position: relative;
+        width:100%;
+
+    }
+    .caseList ul.cases li img {
+        width:100%;
+    }
+    .caseList .cases li .case_mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        font-family: Arial helvetica;
+        font-size: 36px;
+        color: #000;
+        opacity: 0.5;
+        letter-spacing: 0;
+    }
+
+    .ca_txt {
+        line-height:29px;
+        margin-top:164px;
+        font-size: 24px;
+        font-family: helvetica;
+        color: #FFFFFF;
+        letter-spacing: 0;
+    }
+    .ca_txt  p:nth-child(2) {
+        margin-top:10px;
+    }
+    .ca_viewmore {
+        margin:57px auto;
+        border:1px solid #fff;
+        line-height: 1;
+        width:165px;
+        height:39px;
+        padding:9px ;
+        font-size: 20px;
+    }
 }
 /* ---------------------------------------------case 结束-----------------------------------------------------*/
 
