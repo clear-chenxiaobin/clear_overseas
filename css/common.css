@@ -67,7 +67,8 @@ body {
     }
     /*banner 大标题————应用页面：HOME IPTV IMS*/
     .caption-banner {
-        font-size: 28px;
+        font-size: 28px !important;
+        text-transform: none !important;
     }
 
     /*h1 应用页面：HOME ABOUT IPTV IMS*/
@@ -104,7 +105,8 @@ body {
     }
     /*banner 大标题————应用页面：HOME IPTV IMS*/
     .caption-banner {
-        font-size: 80px;
+        font-size: 80px !important;
+        text-transform: none !important;
     }
 
     /*h1 应用页面：HOME ABOUT IPTV IMS*/

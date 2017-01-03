@@ -1,0 +1,21 @@
+#fh5co-header > .container {
+    height:100%;
+}
+
+#fh5co-header > .container > .row {
+    height:100%;
+}
+
+#index-hello-parent {
+    height: 100%;
+}
+
+#index-hello-parent > .display-t {
+    height: 100%;
+}
+
+#index-hello-parent > .display-t > .animate-box {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
