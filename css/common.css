@@ -1,5 +1,15 @@
+* {
+    transition: all 1s ;
+}
+
+@font-face {
+    font-family: 'helvetica';
+    src: url('../fonts/helveticaneue.woff') format('woff'), url('../fonts/HelveticaNeue.ttf') format('truetype'), url('../fonts/helveticaneue.eot') format('truetype'), font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    font-family: "Helvetica Neue";
+    font-family: "helvetica";
 }
 
 .text-white {
@@ -121,14 +131,4 @@ body {
 
 }
 
-* {
-    transition: all .3s ;
-}
 
-@font-face {
-    font-family: 'helvetica';
-    src: url('../fonts/helveticaneue.woff') format('woff'), url('../fonts/HelveticaNeue.ttf') format('truetype'), url('../fonts/helveticaneue.eot') format('truetype'), font-weight: normal;
-    font-style: normal;
-}
-
-/*-----------------------------------------------------*/
