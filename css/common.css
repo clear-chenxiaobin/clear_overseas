@@ -126,7 +126,7 @@ body {
     /*按钮及输入框中的小字*/
     .btn-text,
     .input-text {
-        font-size: 12px;
+        font-size: 12px !important;
     }
 
 }
