@@ -9,7 +9,8 @@
 }
 
 body {
-    font-family: "helvetica";
+    font-family: "helvetica",Arial;
+    font-size: 14px;
 }
 
 .text-white {
@@ -67,7 +68,8 @@ body {
     }
     /*banner 大标题————应用页面：HOME IPTV IMS*/
     .caption-banner {
-        font-size: 28px;
+        font-size: 28px !important;
+        text-transform: none !important;
     }
 
     /*h1 应用页面：HOME ABOUT IPTV IMS*/
@@ -98,13 +100,14 @@ body {
 }
 
 /*PC端*/
-@media (min-width: 768px){
+@media (min-width: 768px) {
     body {
         font-size: 16px;
     }
     /*banner 大标题————应用页面：HOME IPTV IMS*/
     .caption-banner {
-        font-size: 80px;
+        font-size: 80px !important;
+        text-transform: none !important;
     }
 
     /*h1 应用页面：HOME ABOUT IPTV IMS*/
@@ -129,6 +132,21 @@ body {
         font-size: 12px !important;
     }
 
+    .fh5co-nav .container {
+        width: 750px;
+    }
 }
 
+/* 1280*768分辨率 */
+@media (min-width: 1250px) {
+    .fh5co-nav .container {
+        width: 1210px;
+    }
+}
 
+/* 1920*1080分辨率 */
+@media (min-width: 1800px) {
+    .fh5co-nav .container {
+        width: 1790px;
+    }
+}
