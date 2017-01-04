@@ -43,11 +43,66 @@
 #index-project .project-content .desc {
     padding: 0px;
 }
+
 #index-project .project-content .desc > h1, span {
     color: white !important;
     text-transform: none !important;
 }
 
+/* 地图 */
+#index-map img {
+    width: 100%;
+}
+
+#index-partners img {
+    width: 100%;
+}
+
+#index-contact {
+    background-image: url('../images/index/contact.png');
+    /*background-attachment: fixed;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    padding: 46px 0;
+}
+
+#index-contact h1 {
+    color: white;
+}
+
+#index-contact .container {
+    height: 100%;
+    display: table;
+}
+#index-contact .container .index-contact-title {
+    position: absolute;
+    width: 350px;
+    left: 50%;
+    margin-left: -200px;
+}
+#index-contact .container .index-contact-box {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+#index-contact .index-contact-form .form-control {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+#index-contact .index-contact-form .form-group input {
+    height: 40px;
+}
+
+/* copyright */
+#index-contact .copyright {
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    left: 50%;
+    margin-left: -100px;
+}
 
 /*手机端*/
 @media (max-width: 768px) {
@@ -102,12 +157,10 @@
         font-size: 10px !important;
     }
 
-
     /* 视频 */
     #index-video .index-video-box {
         margin: 15px 0px 10px;
     }
-
 
     /* 案例 */
     #index-project {
@@ -119,6 +172,7 @@
         width: 100%;
         padding: 0;
     }
+
     #index-project .project-content {
         padding: 0;
     }
@@ -128,6 +182,7 @@
         margin: 0px;
         height: 148px !important;
     }
+
     #index-project .index-case-box:nth-child(1) {
         height: 162px !important;
     }
@@ -151,18 +206,31 @@
     #index-project .project-content .project-grid .desc {
         width: 252px;
     }
+
     #index-project .project-content .desc > h1 {
         margin-top: 25px;
         margin-bottom: 10px;
     }
+
     #index-project .project-content .desc > span {
         margin-top: 25px;
         font-size: 12px !important;
     }
+
+    /* partners */
+    #index-partners {
+        padding: 23px 0px 30px;
+    }
+
+    /* contact */
+    #index-contact {
+        height: 233px;
+    }
+
+    #index-contact .index-contact-form .form-group input {
+        height: 20px;
+    }
 }
-
-
-
 
 /* PC端*/
 @media (min-width: 768px) {
@@ -199,7 +267,6 @@
         margin-bottom: 10px;
     }
 
-
     /* 视频 */
     #index-video .index-video-box {
         margin: 35px 0px 25px;
@@ -218,13 +285,13 @@
     /* index-case-box */
     #index-project .index-case-box {
         margin: 0px;
+        height: 453px;
     }
 
     /* index-case-box */
     #index-project .col-half {
         padding: 0px;
     }
-
 
     /* desc */
     #index-project .project-content .desc {
@@ -243,11 +310,27 @@
     #index-project .project-grid:hover .desc, .project-grid:focus .desc {
         bottom: 81px;
     }
+
     #index-project .project:hover .desc, .project:focus .desc {
         bottom: 81px;
     }
+
     #index-project .project-content .desc > h1 {
         margin-top: 90px;
+    }
+
+    /* partners */
+    #index-partners {
+        padding: 50px 0px 67px;
+    }
+
+    /* contact */
+    #index-contact {
+        height: 433px;
+    }
+
+    #index-contact .index-contact-form .form-group input {
+        height: 40px;
     }
 }
 
@@ -286,7 +369,6 @@
         margin-bottom: 10px !important;
     }
 
-
     /* 视频 */
     #index-video .index-video-box {
         margin: 35px 0px 30px;
@@ -305,9 +387,6 @@
     /* index-case-box */
     #index-project .index-case-box {
         margin: 0px;
-    }
-
-    #index-project .index-case-box:nth-child(1) {
         height: 453px;
     }
 
@@ -333,11 +412,27 @@
     #index-project .project-grid:hover .desc, .project-grid:focus .desc {
         bottom: 81px;
     }
+
     #index-project .project:hover .desc, .project:focus .desc {
         bottom: 81px;
     }
+
     #index-project .project-content .desc > h1 {
         margin-top: 90px;
+    }
+
+    /* partners */
+    #index-partners {
+        padding: 50px 0px 67px;
+    }
+
+    /* contact */
+    #index-contact {
+        height: 433px;
+    }
+
+    #index-contact .index-contact-form .form-group input {
+        height: 40px;
     }
 }
 
@@ -346,6 +441,7 @@
     .fh5co-nav .container {
         width: 1790px;
     }
+
     /* logo */
     #fh5co-logo > a > img {
         width: 80px;
@@ -380,7 +476,6 @@
         margin: 50px 0px 45px;
         margin-bottom: 30px;
     }
-
 
     /* 案例 */
     #index-project {
@@ -428,10 +523,26 @@
     #index-project .project-grid:hover .desc, .project-grid:focus .desc {
         bottom: 195px;
     }
+
     #index-project .project:hover .desc, .project:focus .desc {
         bottom: 195px;
     }
+
     #index-project .project-content .desc > h1 {
         margin-top: 90px;
+    }
+
+    /* partners */
+    #index-partners {
+        padding: 100px 0px 100px;
+    }
+
+    /* contact */
+    #index-contact {
+        height: 650px;
+    }
+
+    #index-contact .index-contact-form .form-group input {
+        height: 40px;
     }
 }
