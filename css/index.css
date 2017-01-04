@@ -34,6 +34,11 @@
     color: #000000;
 }
 
+/* 视频 */
+#index-video {
+    background: #031C3D;
+}
+
 /*手机端*/
 @media (max-width: 768px) {
     /* logo */
