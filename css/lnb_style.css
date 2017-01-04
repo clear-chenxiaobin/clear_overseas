@@ -280,6 +280,7 @@ html {
         
         margin:213px auto 0;
         width:341px;
+        max-width:95%;
         height:99px;
         line-height:34px;
 
@@ -303,7 +304,7 @@ html {
         margin-top:80px;
     }
 
-
+    
     /* 3像素问题*/
 
     .caseList ul.cases li {
@@ -341,6 +342,23 @@ html {
         font-size: 16px;
     }
 }
+@media screen and (max-width: 414px) {
+    
+} 
+
 /* ---------------------------------------------case 结束-----------------------------------------------------*/
 
+/* ---.------------------------------------------caseDetail 开始-----------------------------------------------------*/
 
+.ca-slide-img {
+    width:100%;
+    max-width:100%;
+}
+.ca-slider {
+    background: #fff;
+    color:#000;
+}
+// div.ca-slide-text {
+//     background-color: #fff;
+//     color:#000;
+// }
