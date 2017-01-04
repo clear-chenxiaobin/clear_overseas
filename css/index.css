@@ -387,6 +387,10 @@
         padding: 100px 0px 68px;
     }
 
+    #index-project .fh5co-heading {
+        margin-bottom: 48px;
+    }
+
     /* project-container */
     #index-project .container {
         width: 1780px;
