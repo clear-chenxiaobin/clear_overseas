@@ -10,7 +10,7 @@
 
 body {
     font-family: "helvetica",Arial;
-    font-size:
+    font-size: 14px;
 }
 
 .text-white {
@@ -100,7 +100,7 @@ body {
 }
 
 /*PC端*/
-@media (min-width: 768px){
+@media (min-width: 768px) {
     body {
         font-size: 16px;
     }
@@ -132,6 +132,21 @@ body {
         font-size: 12px;
     }
 
+    .fh5co-nav .container {
+        width: 750px;
+    }
 }
 
+/* 1280*768分辨率 */
+@media (min-width: 1250px) {
+    .fh5co-nav .container {
+        width: 1210px;
+    }
+}
 
+/* 1920*1080分辨率 */
+@media (min-width: 1800px) {
+    .fh5co-nav .container {
+        width: 1790px;
+    }
+}
