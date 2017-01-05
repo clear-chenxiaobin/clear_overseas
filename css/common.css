@@ -123,9 +123,14 @@ body {
         line-height: 22px;
     }
 
+    /* logo */
+    #fh5co-logo > a > img {
+        width: 60px;
+        height: 23px;
+    }
 }
 
-/*PC端*/
+/* pad端 */
 @media (min-width: 768px) {
     body {
         font-size: 16px;
@@ -161,6 +166,12 @@ body {
     .fh5co-nav .container {
         width: 750px;
     }
+
+    /* logo */
+    #fh5co-logo > a > img {
+        width: 80px;
+        height: 33px;
+    }
 }
 
 /* 1280*768分辨率 */
@@ -168,11 +179,24 @@ body {
     .fh5co-nav .container {
         width: 1210px;
     }
+
+    /* logo */
+    #fh5co-logo > a > img {
+        width: 80px;
+        height: 33px;
+    }
+
 }
 
 /* 1920*1080分辨率 */
 @media (min-width: 1800px) {
     .fh5co-nav .container {
         width: 1790px;
+    }
+
+    /* logo */
+    #fh5co-logo > a > img {
+        width: 80px;
+        height: 33px;
     }
 }

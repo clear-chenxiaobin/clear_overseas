@@ -135,12 +135,6 @@
         font-size: 15px;
     }
 
-    /* logo */
-    #fh5co-logo > a > img {
-        width: 60px;
-        height: 23px;
-    }
-
     /* explore */
     #index-explore {
         margin-left: -45px;
@@ -292,12 +286,6 @@
         width: 750px;
     }
 
-    /* logo */
-    #fh5co-logo > a > img {
-        width: 80px;
-        height: 33px;
-    }
-
     /* explore */
     #index-explore {
         width: 200px;
@@ -386,9 +374,6 @@
         font-size: 12px ;
     }
 
-
-
-
     /* partners */
     #index-partners {
         padding: 50px 0px 67px;
@@ -423,12 +408,6 @@
 @media (min-width: 1250px) {
     .fh5co-nav .container {
         width: 1210px;
-    }
-
-    /* logo */
-    #fh5co-logo > a > img {
-        width: 80px;
-        height: 33px;
     }
 
     /* explore */
@@ -551,12 +530,6 @@
 @media (min-width: 1800px) {
     .fh5co-nav .container {
         width: 1790px;
-    }
-
-    /* logo */
-    #fh5co-logo > a > img {
-        width: 80px;
-        height: 33px;
     }
 
     /* explore */
