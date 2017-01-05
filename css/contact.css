@@ -26,11 +26,6 @@ body {
     margin-left: -175px;
 }
 
-#contact .container .contact-box {
-    display: table-cell;
-    vertical-align: middle;
-}
-
 #contact .contact-form .form-control {
     background-color: rgba(255, 255, 255, 0.2);
     color: white;
@@ -196,5 +191,13 @@ body {
 
     #contact-text img {
         margin: 0px 25px;
+    }
+
+    #contact-map {
+        margin-top: 35px;
+    }
+
+    #dituContent {
+        margin: 0 auto;
     }
 }
