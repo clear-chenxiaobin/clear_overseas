@@ -487,6 +487,7 @@
 
     /* contact */
     #index-contact {
+        padding: 15px 0px;
         height: 433px;
     }
 
@@ -511,6 +512,10 @@
     }
     #index-contact-text {
         display: block;
+    }
+
+    #index-contact-text img {
+        margin: 0px 25px;
     }
 }
 
@@ -632,7 +637,7 @@
     }
 
     #index-contact .container {
-        width: 1400px;
+        width: 1300px;
     }
 
     #index-contact .index-contact-form .form-group {
@@ -640,5 +645,9 @@
     }
     #index-contact .index-contact-form .form-group input {
         height: 40px;
+    }
+
+    #index-contact-text img {
+        margin: 0px 25px;
     }
 }
