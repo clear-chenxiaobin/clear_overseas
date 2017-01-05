@@ -36,6 +36,10 @@
     margin-bottom: 0px;
 }
 
+.index-protucts-box a {
+    color: #000000;
+}
+
 #index-protucts .index-protucts-text > h3 {
     color: #000000;
 }
