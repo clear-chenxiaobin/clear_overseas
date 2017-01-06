@@ -49,10 +49,11 @@
 
         // 触发 移动端 左右滑动
         $('#myModal .carousel-inner .item').on("swipeleft", function() {
-                $('.left.carousel-control.ca-arrow').trigger('click')
+                 $('.right.carousel-control.ca-arrow').trigger('click')
         });
         $('#myModal .carousel-inner .item').on("swiperight", function() {
-                $('.right.carousel-control.ca-arrow').trigger('click')
+               
+                $('.left.carousel-control.ca-arrow').trigger('click')
         });
 
 })($, window)
