@@ -21,6 +21,12 @@
     vertical-align: middle;
 }
 
+#index-explore {
+    position: absolute;
+    left: 50%;
+    color: white;
+}
+
 /* 公共protucts */
 .index-protucts-box {
     text-align: center;
@@ -28,6 +34,10 @@
 
 .index-protucts-box > .feature-center {
     margin-bottom: 0px;
+}
+
+.index-protucts-box a {
+    color: #000000;
 }
 
 #index-protucts .index-protucts-text > h3 {
@@ -39,12 +49,23 @@
     background: #031C3D;
 }
 
-/* desc */
-#index-project .project-content .desc {
+/* index-case-box-text */
+#index-project .project-content .index-case-box-text {
     padding: 0px;
+    margin: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+    background: rgba(3, 29, 61, 0.59);
 }
 
-#index-project .project-content .desc > h1, span {
+#index-project .index-case-box-text-content {
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+}
+
+#index-project .project-content .index-case-box-text-content > h1, span {
     color: white !important;
     text-transform: none !important;
 }
@@ -80,7 +101,7 @@
     position: absolute;
     width: 350px;
     left: 50%;
-    margin-left: -200px;
+    margin-left: -175px;
 }
 #index-contact .container .index-contact-box {
     display: table-cell;
@@ -90,11 +111,15 @@
 
 #index-contact .index-contact-form .form-control {
     background-color: rgba(255, 255, 255, 0.2);
+    color: white;
 }
 #index-contact .index-contact-form .form-group input {
     height: 40px;
 }
 
+#index-project, #index-contact .button {
+    color: #3FAFF2;
+}
 /* copyright */
 #index-contact .copyright {
     position: absolute;
@@ -110,10 +135,10 @@
         font-size: 15px;
     }
 
-    /* logo */
-    #fh5co-logo > a > img {
-        width: 60px;
-        height: 23px;
+    /* explore */
+    #index-explore {
+        margin-left: -45px;
+        bottom: 44px;
     }
 
     /* index protucts */
@@ -164,7 +189,11 @@
 
     /* 案例 */
     #index-project {
-        padding: 30px 0px 20px;
+        padding: 30px 0px 10px;
+    }
+
+    #index-partners-more {
+        margin-top: 10px;
     }
 
     /* project-container */
@@ -183,7 +212,7 @@
         height: 148px !important;
     }
 
-    #index-project .index-case-box:nth-child(1) {
+    #index-project .project-grid.index-case-box {
         height: 162px !important;
     }
 
@@ -193,27 +222,22 @@
         width: 50%;
     }
 
-    /* desc */
-    #index-project .project-content .desc {
-        bottom: 30px;
+    /* index-case-box-text */
+    #index-project .project-content .index-case-box-text {
         height: 100px;
         width: 145px;
         margin: 0 auto;
-        transform: rotate(-360deg);
-        background: rgba(3, 29, 61, 0.59);
     }
 
-    #index-project .project-content .project-grid .desc {
+    #index-project .project-content .project-grid .index-case-box-text {
         width: 252px;
     }
 
-    #index-project .project-content .desc > h1 {
-        margin-top: 25px;
-        margin-bottom: 10px;
+    #index-project .project-content .index-case-box-text h1 {
+        margin-bottom: 10px !important;
     }
 
-    #index-project .project-content .desc > span {
-        margin-top: 25px;
+    #index-project .project-content .index-case-box-text span {
         font-size: 12px !important;
     }
 
@@ -224,11 +248,35 @@
 
     /* contact */
     #index-contact {
+        padding: 20px 0px;
         height: 233px;
     }
 
+    #index-contact .container {
+        width: 100%;
+    }
+
+    #index-contact .index-contact-form .form-control {
+        padding: 0px 10px;
+        font-size: 10px;
+    }
+    #index-contact .index-contact-form .form-group {
+        margin-bottom: 8px;
+    }
     #index-contact .index-contact-form .form-group input {
         height: 20px;
+    }
+    #index-contact-text {
+        display: none;
+    }
+
+
+    #index-contact .button {
+        width: 92px;
+        height: 22px;
+        line-height: 22px;
+        font-size: 10px;
+        padding: 0;
     }
 }
 
@@ -238,10 +286,11 @@
         width: 750px;
     }
 
-    /* logo */
-    #fh5co-logo > a > img {
-        width: 80px;
-        height: 33px;
+    /* explore */
+    #index-explore {
+        width: 200px;
+        margin-left: -100px;
+        bottom: 64px;
     }
 
     /* index protucts */
@@ -254,16 +303,22 @@
         margin-top: 42px;
     }
 
+    .index-protucts-box {
+        text-align: center;
+    }
+
     #index-protucts .index-protucts-icon {
+        display: block;
         margin-bottom: 18px;
     }
 
     #index-protucts .index-protucts-icon > img {
-        width: 111px;
-        height: 111px;
+        width: 100px;
+        height: 100px;
     }
 
     #index-protucts .index-protucts-text > h3, p {
+        padding: 0px;
         margin-bottom: 10px;
     }
 
@@ -274,7 +329,10 @@
 
     /* 案例 */
     #index-project {
-        padding: 40px 0px 68px;
+        padding: 40px 0px 20px;
+    }
+    #index-partners-more {
+        margin-top: 15px;
     }
 
     /* project-container */
@@ -285,7 +343,11 @@
     /* index-case-box */
     #index-project .index-case-box {
         margin: 0px;
-        height: 453px;
+        height: 300px !important;
+    }
+
+    #index-project .project-grid.index-case-box {
+        height: 300px !important;
     }
 
     /* index-case-box */
@@ -293,30 +355,23 @@
         padding: 0px;
     }
 
-    /* desc */
-    #index-project .project-content .desc {
-        bottom: -290px;
-        height: 290px;
-        width: 440px;
+    /* index-case-box-text */
+    #index-project .project-content .index-case-box-text {
+        height: 200px;
+        width: 290px;
         margin: 0 auto;
-        transform: rotate(-360deg);
-        background: rgba(3, 29, 61, 0.59);
     }
 
-    #index-project .project-content .project-grid .desc {
-        width: 730px;
+    #index-project .project-content .project-grid .index-case-box-text {
+        width: 504px;
     }
 
-    #index-project .project-grid:hover .desc, .project-grid:focus .desc {
-        bottom: 81px;
+    #index-project .project-content .index-case-box-text h1 {
+        margin-bottom: 10px;
     }
 
-    #index-project .project:hover .desc, .project:focus .desc {
-        bottom: 81px;
-    }
-
-    #index-project .project-content .desc > h1 {
-        margin-top: 90px;
+    #index-project .project-content .index-case-box-text span {
+        font-size: 12px ;
     }
 
     /* partners */
@@ -326,11 +381,26 @@
 
     /* contact */
     #index-contact {
+        padding: 50px 0;
         height: 433px;
     }
 
+    #index-contact .container {
+        width: 750px;
+    }
+
+    #index-contact .index-contact-form .form-control {
+        padding: 0px 10px;
+        font-size: inherit;
+    }
+    #index-contact .index-contact-form .form-group {
+        margin-bottom: 15px;
+    }
     #index-contact .index-contact-form .form-group input {
         height: 40px;
+    }
+    #index-contact-text {
+        display: none;
     }
 }
 
@@ -340,10 +410,11 @@
         width: 1210px;
     }
 
-    /* logo */
-    #fh5co-logo > a > img {
-        width: 80px;
-        height: 33px;
+    /* explore */
+    #index-explore {
+        width: 200px;
+        margin-left: -100px;
+        bottom: 79px;
     }
 
     /* index protucts */
@@ -387,7 +458,11 @@
     /* index-case-box */
     #index-project .index-case-box {
         margin: 0px;
-        height: 453px;
+        height: 453px !important;
+    }
+
+    #index-project .project-grid.index-case-box {
+        height: 453px !important;
     }
 
     /* index-case-box */
@@ -395,30 +470,21 @@
         padding: 0px;
     }
 
-    /* desc */
-    #index-project .project-content .desc {
-        bottom: -290px;
+    /* index-case-box-text */
+    #index-project .project-content .index-case-box-text {
         height: 290px;
         width: 440px;
-        margin: 0 auto;
-        transform: rotate(-360deg);
-        background: rgba(3, 29, 61, 0.59);
     }
 
-    #index-project .project-content .project-grid .desc {
+    #index-project .project-content .project-grid .index-case-box-text {
         width: 730px;
     }
 
-    #index-project .project-grid:hover .desc, .project-grid:focus .desc {
-        bottom: 81px;
+    #index-project .project-content .index-case-box-text h1 {
+        margin-bottom: 30px !important;
     }
-
-    #index-project .project:hover .desc, .project:focus .desc {
-        bottom: 81px;
-    }
-
-    #index-project .project-content .desc > h1 {
-        margin-top: 90px;
+    #index-project .project-content .index-case-box-text span {
+        font-size: 18px !important;
     }
 
     /* partners */
@@ -428,11 +494,35 @@
 
     /* contact */
     #index-contact {
+        padding: 20px 0px 15px;
         height: 433px;
     }
 
+    #index-contact .container {
+        width: 1200px;
+    }
+
+    #index-contact .index-contact-form .form-control {
+        padding: 0px 10px;
+    }
+    #index-contact .index-contact-form .form-group {
+        margin-bottom: 30px;
+    }
     #index-contact .index-contact-form .form-group input {
         height: 40px;
+    }
+
+    #index-contact .button {
+        width: 133px;
+        height: 30px;
+        line-height: 30px;
+    }
+    #index-contact-text {
+        display: block;
+    }
+
+    #index-contact-text img {
+        margin: 0px 25px;
     }
 }
 
@@ -442,10 +532,10 @@
         width: 1790px;
     }
 
-    /* logo */
-    #fh5co-logo > a > img {
-        width: 80px;
-        height: 33px;
+    /* explore */
+    #index-explore {
+        margin-left: -100px;
+        bottom: 117px;
     }
 
     /* index protucts */
@@ -479,11 +569,16 @@
 
     /* 案例 */
     #index-project {
-        padding: 100px 0px 68px;
+        padding: 100px 0px 57px;
     }
 
     #index-project .fh5co-heading {
         margin-bottom: 48px;
+    }
+
+    /* more cases */
+    #index-partners-more {
+        margin-top: 25px;
     }
 
     /* project-container */
@@ -494,11 +589,11 @@
     /* index-case-box */
     #index-project .index-case-box {
         margin: 0px;
-        color: #000000;
+        height: 680px !important;
     }
 
-    #index-project .index-case-box:nth-child(1) {
-        height: 680px;
+    #index-project .project-grid.index-case-box {
+        height: 680px !important;
     }
 
     /* index-col-half */
@@ -506,30 +601,10 @@
         padding: 0px;
     }
 
-    /* desc */
-    #index-project .project-content .desc {
-        bottom: -290px;
+    /* index-case-box-text */
+    #index-project .project-content .index-case-box-text {
         height: 290px;
         width: 440px;
-        margin: 0 auto;
-        transform: rotate(-360deg);
-        background: rgba(3, 29, 61, 0.59);
-    }
-
-    #index-project .project-content .project-grid .desc {
-        width: 730px;
-    }
-
-    #index-project .project-grid:hover .desc, .project-grid:focus .desc {
-        bottom: 195px;
-    }
-
-    #index-project .project:hover .desc, .project:focus .desc {
-        bottom: 195px;
-    }
-
-    #index-project .project-content .desc > h1 {
-        margin-top: 90px;
     }
 
     /* partners */
@@ -539,10 +614,22 @@
 
     /* contact */
     #index-contact {
+        padding: 46px 0;
         height: 650px;
     }
 
+    #index-contact .container {
+        width: 1300px;
+    }
+
+    #index-contact .index-contact-form .form-group {
+        margin-bottom: 30px;
+    }
     #index-contact .index-contact-form .form-group input {
         height: 40px;
+    }
+
+    #index-contact-text img {
+        margin: 0px 25px;
     }
 }

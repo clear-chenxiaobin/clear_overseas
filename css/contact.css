@@ -1,0 +1,203 @@
+body {
+    height: 100%;
+}
+#page {
+    height: 100%;
+    background: #000B19;
+}
+
+#contact {
+    padding: 46px 0;
+}
+
+#contact-text .col-md-3, #contact-text .col-md-9 {
+    padding: 0;
+}
+
+#contact .container {
+    height: 100%;
+    display: table;
+}
+
+#contact .container .contact-title {
+    position: absolute;
+    width: 350px;
+    left: 50%;
+    margin-left: -175px;
+}
+
+#contact .contact-form .form-control {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+#contact .contact-form .form-group input {
+    height: 40px;
+}
+
+#project, #contact .button {
+    color: #3FAFF2;
+}
+
+/* copyright */
+#contact .copyright {
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    left: 50%;
+    margin-left: -100px;
+}
+
+/*手机端*/
+@media (max-width: 768px) {
+    /* contact */
+    #contact {
+        padding: 20px 0px;
+    }
+
+    #contact .container {
+        width: 100%;
+    }
+
+    #contact .contact-form .form-control {
+        padding: 0px 10px;
+        font-size: 10px;
+    }
+
+    #contact .contact-form .form-group {
+        margin-bottom: 8px;
+    }
+
+    #contact .contact-form .form-group input {
+        height: 20px;
+    }
+
+    #contact-text {
+        display: none;
+    }
+
+    #contact .button {
+        width: 92px;
+        height: 22px;
+        line-height: 22px;
+        font-size: 10px;
+        padding: 0;
+    }
+}
+
+/* ipad端*/
+@media (min-width: 768px) {
+    /* contact */
+    #contact {
+        padding: 50px 0;
+    }
+
+    #contact .container {
+        width: 750px;
+    }
+
+    #contact .contact-form .form-control {
+        padding: 0px 10px;
+        font-size: inherit;
+    }
+
+    #contact .contact-form .form-group {
+        margin-bottom: 15px;
+    }
+
+    #contact .contact-form .form-group input {
+        height: 40px;
+    }
+
+    #contact-text {
+        display: none;
+    }
+}
+
+/* 1280*768分辨率 */
+@media (min-width: 1250px) {
+    /* contact */
+    #contact {
+        padding: 20px 0px 15px;
+    }
+
+    #contact .container {
+        width: 1200px;
+    }
+
+    #contact .contact-form .form-control {
+        padding: 0px 10px;
+    }
+
+    #contact .contact-form .form-group {
+        margin-bottom: 30px;
+    }
+
+    #contact .contact-form .form-group input {
+        height: 40px;
+    }
+
+    #contact .button {
+        width: 133px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    #contact-text {
+        display: block;
+    }
+
+    #contact-text img {
+        margin: 0px 25px;
+    }
+}
+
+/* 1920*1080分辨率 */
+@media (min-width: 1800px) {
+    /* contact */
+    #contact {
+        padding: 250px 0 100px;
+    }
+
+    #contact .container {
+        width: 1300px;
+    }
+
+    #contact-text {
+        width: 735px;
+    }
+
+    #contact-text .text-group {
+        margin-bottom: 10px;
+        padding: 0px 15px;
+    }
+
+    #contact-text label {
+        font-size: 20px;
+    }
+    #contact-text span {
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 34px;
+    }
+
+    #contact .contact-form .form-group {
+        margin-bottom: 30px;
+    }
+
+    #contact .contact-form .form-group input {
+        height: 40px;
+    }
+
+    #contact-text img {
+        margin: 0px 25px;
+    }
+
+    #contact-map {
+        margin-top: 35px;
+    }
+
+    #dituContent {
+        margin: 0 auto;
+    }
+}

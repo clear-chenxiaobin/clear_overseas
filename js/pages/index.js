@@ -17,3 +17,7 @@ function setHeader() {
     var height = document.documentElement.clientHeight;
     $("#fh5co-header").css("height", height);
 }
+
+$("#index-explore").click(function () {
+    $("html,body").animate({scrollTop: $("#index-protucts").offset().top}, 1000);
+})

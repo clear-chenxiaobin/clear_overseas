@@ -22,6 +22,31 @@ body {
     color: #000 !important;
 }
 
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+    width: 3px;
+    height: 20px;
+    background-color: rgba(0,0,0,1);
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
+
+
 /*按钮样式*/
 .button {
     display: inline-block;
@@ -31,6 +56,7 @@ body {
     text-align: center;
     text-decoration: none !important;
     background: transparent;
+    padding: 0;
 }
 /*蓝色按钮样式*/
 .button-b {
@@ -98,16 +124,21 @@ body {
         line-height: 22px;
     }
 
+    /* logo */
+    #fh5co-logo > a > img {
+        width: 60px;
+        height: 23px;
+    }
 }
 
-/*PC端*/
+/* pad端 */
 @media (min-width: 768px) {
     body {
         font-size: 16px;
     }
     /*banner 大标题————应用页面：HOME IPTV IMS*/
     .caption-banner {
-        font-size: 80px !important;
+        font-size: 53px !important;
         text-transform: none !important;
     }
 
@@ -136,6 +167,12 @@ body {
     .fh5co-nav .container {
         width: 750px;
     }
+
+    /* logo */
+    #fh5co-logo > a > img {
+        width: 80px;
+        height: 33px;
+    }
 }
 
 /* 1280*768分辨率 */
@@ -143,11 +180,24 @@ body {
     .fh5co-nav .container {
         width: 1210px;
     }
+
+    /* logo */
+    #fh5co-logo > a > img {
+        width: 80px;
+        height: 33px;
+    }
+
 }
 
 /* 1920*1080分辨率 */
 @media (min-width: 1800px) {
     .fh5co-nav .container {
         width: 1790px;
+    }
+
+    /* logo */
+    #fh5co-logo > a > img {
+        width: 80px;
+        height: 33px;
     }
 }
