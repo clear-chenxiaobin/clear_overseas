@@ -1,6 +1,6 @@
 * {
-    transition: all 1s ;
-    animation: all 1s ;
+    /*transition: all 1s ;*/
+    /*animation: all 1s ;*/
 }
 
 @font-face {
@@ -97,6 +97,9 @@ body {
     padding: 5px 15px;
     border: 1px white solid;
 }
+#fh5co-offcanvas {
+    z-index: 999;
+}
 #fh5co-offcanvas a:hover {
     color: rgba(255, 255, 255, 1);
 }
@@ -121,6 +124,12 @@ body {
     font-size: 20px;
 }
 
+/* 底部copyright */
+#footer-copyright {
+    position: absolute;
+    left: 50%;
+    margin-left: -99px;
+}
 
 /*手机端*/
 @media (max-width: 768px){
@@ -180,6 +189,11 @@ body {
         margin: 10px 0;
         padding: 0;
     }
+
+    /* copyright */
+    #footer-copyright {
+        bottom: 10px;
+    }
 }
 
 /* pad端 */
@@ -229,6 +243,11 @@ body {
     #fh5co-offcanvas .menu-first {
         padding: 25px;
     }
+
+    /* copyright */
+    #footer-copyright {
+        bottom: 15px;
+    }
 }
 
 /* 1280*768分辨率 */
@@ -243,6 +262,10 @@ body {
         height: 33px;
     }
 
+    /* copyright */
+    #footer-copyright {
+        bottom: 20px;
+    }
 }
 
 /* 1920*1080分辨率 */
@@ -255,5 +278,10 @@ body {
     #fh5co-logo > a > img {
         width: 80px;
         height: 33px;
+    }
+
+    /* copyright */
+    #footer-copyright {
+        bottom: 30px;
     }
 }
