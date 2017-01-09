@@ -264,6 +264,10 @@ body {
 h2 {
     font-size:28px !important;
 }
+/*底部出现的loading*/
+.ui-loader-default{ display:none}
+.ui-mobile-viewport{ border:none;}
+.ui-page {padding: 0; margin: 0; outline: 0} 
 .ca_txt  p:nth-child(2) {
     margin-top:10px;
 }
