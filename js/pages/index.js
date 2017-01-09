@@ -21,3 +21,8 @@ function setHeader() {
 $("#index-explore").click(function () {
     $("html,body").animate({scrollTop: $("#index-protucts").offset().top}, 1000);
 })
+
+$(".menu-first").on('blur', function () {
+    $(".menu-first").removeClass('active');
+    $(this).addClass('active');
+})

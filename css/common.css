@@ -87,6 +87,40 @@ body {
     color: #1888CC !important;
 }
 
+/* 导航栏 */
+.fh5co-nav .menu-first span {
+    padding: 5px 15px;
+    border: 1px transparent solid;
+}
+.fh5co-nav .menu-first span:hover {
+    color: white !important;
+    padding: 5px 15px;
+    border: 1px white solid;
+}
+#fh5co-offcanvas a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+.fh5co-nav ul li a span {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+.fh5co-nav ul li.active a span {
+    color: white !important;
+}
+
+#fh5co-offcanvas {
+    width: 100%;
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+    background: #000B19;
+}
+
+#fh5co-offcanvas .menu-first > a {
+    font-size: 20px;
+}
+
 
 /*手机端*/
 @media (max-width: 768px){
@@ -128,6 +162,23 @@ body {
     #fh5co-logo > a > img {
         width: 60px;
         height: 23px;
+    }
+
+    /* 导航栏 */
+    #fh5co-offcanvas .menu-first {
+        text-align: center;
+        padding: 20px;
+    }
+    #fh5co-offcanvas .menu-first > a {
+        font-size: 20px;
+    }
+
+    #fh5co-offcanvas ul li.offcanvas-has-dropdown > a:after {
+        top: 8px;
+    }
+    #fh5co-offcanvas ul li > ul {
+        margin: 10px 0;
+        padding: 0;
     }
 }
 
@@ -172,6 +223,11 @@ body {
     #fh5co-logo > a > img {
         width: 80px;
         height: 33px;
+    }
+
+    /* 导航栏 */
+    #fh5co-offcanvas .menu-first {
+        padding: 25px;
     }
 }
 
