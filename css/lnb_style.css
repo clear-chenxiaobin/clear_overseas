@@ -639,4 +639,48 @@ h2 {
 }
 
 
-/*  caseDetail 结束
+/************************caseDetail 结束 *********************/
+
+/************************IPTV 开始 *********************/
+
+/*default是在1280和1920之间的*/
+.iptv-banner {
+    background: url("../images/iptv/images/headbg.png") no-repeat center center rgba(0,12,26,1);
+    text-align:center;
+    height: 667px;
+    width:100%;
+}
+.iptv-banner-txt {
+    line-height: 667px;
+    font-size:80px;
+    color: #FFFFFF;
+    letter-spacing: -2.38px;
+    margin-top:0;
+}
+.iptv-greeting-img {
+    background: url("../images/iptv/images/tvui04.png") no-repeat center center;
+    width:574px;
+    height:322px;
+}
+.iptv-row1 {
+    margin-top:105px;
+}
+.iptv-row2 {
+    margin-top:165px;
+}
+.iptv-menu-item {
+    position: relative;
+}
+.iptv-ment-item-content {
+    float: right;
+    width:80%;
+    padding-left: 20px;
+}
+.iptv-ment-item-title {
+    width:20%;
+    text-align: right;
+}
+.iptv-ment-item-title:after {
+    content:':';
+}
+/************************IPTV 结束 *********************/
