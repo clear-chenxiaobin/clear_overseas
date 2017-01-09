@@ -88,13 +88,12 @@ body {
 }
 
 /* 导航栏 */
-.fh5co-nav .menu-first span {
-    padding: 5px 15px;
+.fh5co-nav .menu-first {
+    padding: 5px 10px;
     border: 1px transparent solid;
 }
-.fh5co-nav .menu-first span:hover {
+.fh5co-nav .menu-first:hover {
     color: white !important;
-    padding: 5px 15px;
     border: 1px white solid;
 }
 #fh5co-offcanvas {
