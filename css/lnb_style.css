@@ -11,7 +11,7 @@ hr,
 p,
 blockquote,
 
-/* structural elements 结构元素 */
+/* structural elemenus 结构元素 */
 
 dl,
 dt,
@@ -187,6 +187,10 @@ html {
 }
 
 /* ---------------------------------------------case 开始-----------------------------------------------------*/
+* {
+    transition: all 1s ;
+    animation: all 1s ;
+}
 body {
     position: relative;
 }
@@ -644,6 +648,17 @@ h2 {
 /************************IPTV 开始 *********************/
 
 /*default是在1280和1920之间的*/
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,div,p {
+    color:#000;
+}
+ul,ol {
+    list-style: none;
+    padding:0;
+}
+li {
+    list-style-position: inside;
+}
+
 .iptv-banner {
     background: url("../images/iptv/images/headbg.png") no-repeat center center rgba(0,12,26,1);
     text-align:center;
@@ -658,9 +673,27 @@ h2 {
     margin-top:0;
 }
 .iptv-greeting-img {
-    background: url("../images/iptv/images/tvui04.png") no-repeat center center;
+    
     width:574px;
-    height:322px;
+}
+.iptv-greeting-txt {
+    color:#000;
+}
+.iptv-greeting-ul {
+    margin-top:81px;
+    padding-left:0;
+}
+.iptv-greeting-ul li{
+   list-style-type: disc;
+   list-style-position:inside;
+   color: #0186E1;
+   font-size:20px;
+   margin-top:20px;
+}
+.iptv-greeting-ul li span {
+    color:#000;
+    font-size:16px;
+    line-height:18px;
 }
 .iptv-row1 {
     margin-top:105px;
@@ -668,19 +701,108 @@ h2 {
 .iptv-row2 {
     margin-top:165px;
 }
+.iptv-menu-ul {
+    margin-top:51px;
+}
+.iptv-menu-items {
+    margin-top:50px;
+}
+.iptv-menu-items>li {
+    opacity: 0.6;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+.iptv-menu-items>li>.iptv-menu-item-content li  {
+    margin-bottom: 25px;
+}
+.iptv-menu-video {
+    margin-top:150px;
+}
+.iptv-menu-ul li {
+    font-size:16px;
+    line-height: 18px;
+    margin-top:10px;
+}
 .iptv-menu-item {
     position: relative;
 }
-.iptv-ment-item-content {
+.iptv-menu-item-content {
     float: right;
     width:80%;
     padding-left: 20px;
 }
-.iptv-ment-item-title {
+.iptv-menu-item-title {
     width:20%;
     text-align: right;
 }
-.iptv-ment-item-title:after {
+.iptv-menu-item-title:after {
     content:':';
 }
+.iptv-hardware-title {
+    font-size: 24px;
+    color: #000000;
+    letter-spacing: 0;
+}
+/*硬件产品列表标题 左边蓝点*/
+.iptv-hardware-title::before {
+    content:'';
+    width:8px;
+    height:8px;
+    background-color:#0186E1;
+    border-radius: 50%;
+    display: inline-block;
+
+    line-height: 8px;
+}
+
+.iptv-hardware-item-content {
+    float: right;
+    width:80%;
+}
+.iptv-hardware-item-title {
+    width:20%;
+    text-align: right;
+}
+.iptv-hardware-item-title:after {
+    content: ':';
+}
+.iptv-hardware-items1-img {
+    background:url(../images/iptv/images/A3000C.png) no-repeat center center;
+    height:522px;
+}
+.iptv-hardware-items2-img {
+    background:url(../images/iptv/images/A3000H.png) no-repeat center center;
+    height:522px;
+}
+.iptv-hardware-items3-img {
+    background:url(../images/iptv/images/A3000Y.png) no-repeat center center;
+    height:522px;
+}
+.iptv-hardware-items4-img {
+    background:url(../images/iptv/images/AIO.png) no-repeat center center;
+    height:380px;
+}
+
+.iptv-case1-img {
+    height:500px;
+    background:url(../images/iptv/images/case01.png) no-repeat center center;
+}
+.iptv-case2-img {
+    height:610px;
+    background:url(../images/iptv/images/case02.png) no-repeat center center;
+}
+.iptv-case3-img {
+    height:610px;
+    background:url(../images/iptv/images/case03.png) no-repeat center center;
+}
+
+.iptv-case4-img1 {
+    height:348px;
+    background:url(../images/iptv/images/connect_CLEAR_IMS.png) no-repeat center center;
+}
+.iptv-case4-img2 {
+    height:348px;
+    background:url(../images/iptv/images/connect_CLEARMobile.png) no-repeat center center;
+}
+
 /************************IPTV 结束 *********************/
