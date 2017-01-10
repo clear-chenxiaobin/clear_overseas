@@ -26,6 +26,10 @@
     <!--引用百度地图API-->
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=8TgQh43wGUfEeEhSpn4kIwv0wX2DOv31"></script>
 
+    <!-- google map API-->
+    <!--AIzaSyBY5HUcTcBv4DesP6G6GqYLAam-hmzNjlU-->
+
+    
     <!-- Modernizr JS -->
     <script src="js/modernizr-2.6.2.min.js"></script>
     <!-- FOR IE9 below -->
@@ -119,6 +123,9 @@
             <div id="contact-map" class="row animate-box">
                 <!--百度地图容器-->
                 <div id="dituContent"></div>
+                <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY5HUcTcBv4DesP6G6GqYLAam-hmzNjlU&signed_in=true&callback=initMap">
+                </script>
             </div>
         </div>
         <div class="row copyright">
@@ -146,46 +153,83 @@
 <!-- Main -->
 <script src="js/main.js"></script>
 
-<script type="text/javascript">
-    var map = new BMap.Map("dituContent");
-    map.centerAndZoom(new BMap.Point(121.632858,31.21835), 16);
-    map.enableScrollWheelZoom();
-    var marker=new BMap.Marker(new BMap.Point(121.632858,31.21835));
-    map.addOverlay(marker);
-    var licontent="<b>Shanghai ClearTV Corp.</b><br>";
-    licontent+="<span><strong>Address：</strong>Building 11, Lane 2277, Zuchongzhi Road, Pudong New Area, Shanghai.</span><br>";
-    licontent+="<span><strong>Tel：</strong>0086-21-55896261-655</span><br>";
-    licontent+="<span class=\"input\"><strong></strong><input style=\"width: 130px\" class=\"outset\" type=\"text\" name=\"origin\" value=\"\"/><input class=\"outset-but\" type=\"button\" value=\"Transit\" onclick=\"gotobaidu(1)\" /><input class=\"outset-but\" type=\"button\" value=\"Driving\"  onclick=\"gotobaidu(2)\"/><a class=\"gotob\" href=\"url=\"http://api.map.baidu.com/direction?destination=latlng:"+marker.getPosition().lat+","+marker.getPosition().lng+"|name:clear"+"®ion=上海"+"&output=html\" target=\"_blank\"></a></span>";
+<!--<script type="text/javascript">-->
+    <!--var map = new BMap.Map("dituContent");-->
+    <!--map.centerAndZoom(new BMap.Point(121.632858,31.21835), 16);-->
+    <!--map.enableScrollWheelZoom();-->
+    <!--var marker=new BMap.Marker(new BMap.Point(121.632858,31.21835));-->
+    <!--map.addOverlay(marker);-->
+    <!--var licontent="<b>Shanghai ClearTV Corp.</b><br>";-->
+    <!--licontent+="<span><strong>Address: </strong>Building 11, Lane 2277, Zuchongzhi Road, Pudong New Area, Shanghai.</span><br>";-->
+    <!--licontent+="<span><strong>Tel: </strong>0086-21-55896261-655</span><br>";-->
+    <!--licontent+="<span class=\"input\"><strong></strong><input style=\"width: 130px\" class=\"outset\" type=\"text\" name=\"origin\" value=\"\"/><input class=\"outset-but\" type=\"button\" value=\"Transit\" onclick=\"gotobaidu(1)\" /><input class=\"outset-but\" type=\"button\" value=\"Driving\"  onclick=\"gotobaidu(2)\"/><a class=\"gotob\" href=\"url=\"http://api.map.baidu.com/direction?destination=latlng:"+marker.getPosition().lat+","+marker.getPosition().lng+"|name:clear"+"®ion=上海"+"&output=html\" target=\"_blank\"></a></span>";-->
 
-    var hiddeninput="<input type=\"hidden\" value=\""+'上海'+"\" name=\"region\" /><input type=\"hidden\" value=\"html\" name=\"output\" /><input type=\"hidden\" value=\"driving\" name=\"mode\" /><input type=\"hidden\" value=\"latlng:"+marker.getPosition().lat+","+marker.getPosition().lng+"|name:clear"+"\" name=\"destination\" />";
+    <!--var hiddeninput="<input type=\"hidden\" value=\""+'上海'+"\" name=\"region\" /><input type=\"hidden\" value=\"html\" name=\"output\" /><input type=\"hidden\" value=\"driving\" name=\"mode\" /><input type=\"hidden\" value=\"latlng:"+marker.getPosition().lat+","+marker.getPosition().lng+"|name:clear"+"\" name=\"destination\" />";-->
 
-    var content1 ="<form id=\"gotobaiduform\" action=\"http://api.map.baidu.com/direction\" target=\"_blank\" method=\"get\">" + licontent +hiddeninput+"</form>";
+    <!--var content1 ="<form id=\"gotobaiduform\" action=\"http://api.map.baidu.com/direction\" target=\"_blank\" method=\"get\">" + licontent +hiddeninput+"</form>";-->
 
-    var opts1 = { width: 280 };
+    <!--var opts1 = { width: 280 };-->
 
-    var  infoWindow = new BMap.InfoWindow(content1, opts1);
-    marker.openInfoWindow(infoWindow);
-    marker.addEventListener('click',function(){
-        marker.openInfoWindow(infoWindow);
-    });
+    <!--var  infoWindow = new BMap.InfoWindow(content1, opts1);-->
+    <!--marker.openInfoWindow(infoWindow);-->
+    <!--marker.addEventListener('click',function(){-->
+        <!--marker.openInfoWindow(infoWindow);-->
+    <!--});-->
 
-    function gotobaidu(type)
-    {
-        if($.trim($("input[name=origin]").val())=="")
-        {
-            alert("Please enter a starting point!");
-            return;
-        }else{
-            if(type==1)
-            {
-                $("input[name=mode]").val("transit");
-                $("#gotobaiduform")[0].submit();
-            }else if(type==2)
-            {
-                $("input[name=mode]").val("driving");
-                $("#gotobaiduform")[0].submit();
+    <!--function gotobaidu(type)-->
+    <!--{-->
+        <!--if($.trim($("input[name=origin]").val())=="")-->
+        <!--{-->
+            <!--alert("Please enter a starting point!");-->
+            <!--return;-->
+        <!--}else{-->
+            <!--if(type==1)-->
+            <!--{-->
+                <!--$("input[name=mode]").val("transit");-->
+                <!--$("#gotobaiduform")[0].submit();-->
+            <!--}else if(type==2)-->
+            <!--{-->
+                <!--$("input[name=mode]").val("driving");-->
+                <!--$("#gotobaiduform")[0].submit();-->
+            <!--}-->
+        <!--}-->
+    <!--}-->
+<!--</script>-->
+
+<script>
+    // When you add a marker using a Place instead of a location, the Maps
+    // API will automatically add a 'Save to Google Maps' link to any info
+    // window associated with that marker.
+    function initMap() {
+        var map = new google.maps.Map(document.getElementById('dituContent'), {
+            zoom: 15,
+            center: {lat: 31.212680, lng: 121.626226}
+        });
+
+        var marker = new google.maps.Marker({
+            map: map,
+            // Define the place with a location, and a query string.
+            place: {
+                location: {lat: 31.212680, lng: 121.626226},
+                query: 'Google, Shanghai, China'
+
+            },
+            // Attributions help users find your site again.
+            attribution: {
+                source: 'Google Maps JavaScript API',
+                webUrl: 'https://developers.google.com/maps/'
             }
-        }
+        });
+
+        // Construct a new InfoWindow.
+        var infoWindow = new google.maps.InfoWindow({
+            content: 'Shanghai ClearTV Corp.'
+        });
+
+        // Opens the InfoWindow when marker is clicked.
+        marker.addListener('click', function() {
+            infoWindow.open(map, marker);
+        });
     }
 </script>
 
