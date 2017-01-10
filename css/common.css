@@ -119,6 +119,10 @@ body {
     background: #000B19;
 }
 
+#fh5co-offcanvas ul li {
+    padding: 10px;
+}
+
 #fh5co-offcanvas .menu-first > a {
     font-size: 20px;
 }
