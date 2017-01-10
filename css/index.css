@@ -68,6 +68,10 @@
     color: #000000;
 }
 
+#index-protucts .index-protucts-unfinished h3 {
+    color: #828282;
+}
+
 /* 视频 */
 #index-video {
     background: #031C3D;
@@ -244,6 +248,10 @@
         padding: 0;
     }
 
+    #index-protucts .index-protucts-unfinished {
+        display: none;
+    }
+
     /* index-case-box */
     #index-project .index-case-box {
         margin: 0px;
@@ -352,6 +360,11 @@
 
     #index-protucts .row:nth-child(2) {
         margin-top: 42px;
+    }
+
+    #index-protucts .index-protucts-unfinished {
+        display: block;
+        color: #828282;
     }
 
     .index-protucts-box {
