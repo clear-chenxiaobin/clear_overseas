@@ -73,6 +73,10 @@ body {
     margin: 0;
 }
 
+.BMap_cpyCtrl{
+    display: none;
+}
+
 /*手机端*/
 @media (max-width: 768px) {
     /*nav*/
