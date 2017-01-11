@@ -701,6 +701,12 @@ li {
 .iptv-row2 {
     margin-top:165px;
 }
+.iptv-row4 {
+    margin-top:180px;
+}
+.iptv-row5 {
+    margin-top:108px;
+}
 .iptv-menu-ul {
     margin-top:51px;
 }
@@ -731,6 +737,9 @@ li {
     width:80%;
     padding-left: 20px;
 }
+.iptv-hardware-section-title {
+    margin-top:81px;
+}
 .iptv-menu-item-title {
     width:20%;
     text-align: right;
@@ -740,27 +749,53 @@ li {
 }
 .iptv-hardware-title {
     font-size: 24px;
+    line-hegiht:29px;
     color: #000000;
     letter-spacing: 0;
+    padding-left:15px;
 }
 /*硬件产品列表标题 左边蓝点*/
 .iptv-hardware-title::before {
     content:'';
-    width:8px;
-    height:8px;
+    width:10px;
+    height:10px;
     background-color:#0186E1;
     border-radius: 50%;
     display: inline-block;
 
-    line-height: 8px;
+    position: absolute;
+    top: 8px;
+    left: 15px;
 }
+.iptv-hardware-items {
+    margin-top: 30px;
+}
+
+.iptv-hardware-items> li {
+    margin-bottom: 19px;
+}
+.iptv-row4 .row {
+    margin-top: 151px;
+}
+.iptv-hardware-items4-txt {
+    margin-top:24px;
+    font-size:16px;
+    line-height: 30px;
+
+}
+.iptv-hardware-item-content {
+    font-size: 16px;
+    opacity: 0.6;
+    padding-left: 20px;
+}
+
 
 .iptv-hardware-item-content {
     float: right;
-    width:80%;
+    width:70%;
 }
 .iptv-hardware-item-title {
-    width:20%;
+    width:30%;
     text-align: right;
 }
 .iptv-hardware-item-title:after {
@@ -782,10 +817,43 @@ li {
     background:url(../images/iptv/images/AIO.png) no-repeat center center;
     height:380px;
 }
+.iptv-case-txt{
+    margin-top:40px;
+}
 
-.iptv-case1-img {
+.iptv-case-txt h2 {
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+    display: inline-block;
+}
+.iptv-case-txt p {
+    margin-top:20px;
+    opacity: 0.8;
+    font-size: 16px;
+}
+.iptv-cases1 {
+    margin-top:81px;
+
+}
+.iptv-case2 {
+    height:610px;
+}
+.iptv-case3{
     height:500px;
-    background:url(../images/iptv/images/case01.png) no-repeat center center;
+}
+.iptv-case2 , .iptv-case3{
+   margin-top:70px;
+}
+.iptv-case-content {
+    height:100%;
+}
+.iptv-case1-img {
+    width: 100%;
+}
+.iptv-case2-text,.iptv-case3-text {
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
 }
 .iptv-case2-img {
     height:610px;
@@ -795,14 +863,33 @@ li {
     height:610px;
     background:url(../images/iptv/images/case03.png) no-repeat center center;
 }
+.iptv-case4-txt {
+    position: absolute;
+    font-size: 45px;
+    position: absolute;
+    top:50%;
+    left:80px;
+    background-color: #fff;
+    transform:translateY(-50%);
+
+}
+.iptv-case4-content {
+    border:1px solid #000;
+}
+.iptv-case4-content:after {
+    content:'View';
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+}
 
 .iptv-case4-img1 {
     height:348px;
-    background:url(../images/iptv/images/connect_CLEAR_IMS.png) no-repeat center center;
+    background:url(../images/iptv/images/connect_CLEAR_IMS.png) no-repeat right center;
 }
 .iptv-case4-img2 {
     height:348px;
-    background:url(../images/iptv/images/connect_CLEARMobile.png) no-repeat center center;
+    background:url(../images/iptv/images/connect_CLEARMobile.png) no-repeat right center;
 }
 
 /************************IPTV 结束 *********************/
