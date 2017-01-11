@@ -30,25 +30,10 @@
 #index-explore-arrow {
     margin: 0 auto;
     width: 0px;
-    height: 37px;
     position: relative;
 }
-.border {
-    width: 0px;
-    height: 30px;
-    border-width: 1px;
-    border-style: solid;
-    position: absolute;
-}
-.borderbottom{
-    width:0px;
-    height: 0px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #fff transparent transparent transparent;
-    position: absolute;
-    margin-left: -4px;
-    top: 30px;
+#index-explore-arrow > img {
+    height: 100%;
 }
 
 /* 公共protucts */
@@ -108,7 +93,7 @@
 }
 
 #index-contact {
-    background-image: url('../images/index/contact.png');
+    background-image: url('../images/index/contact.jpg');
     /*background-attachment: fixed;*/
     background-repeat: no-repeat;
     background-size: cover;
@@ -166,22 +151,13 @@
     /* explore */
     #index-explore {
         margin-left: -45px;
-        bottom: 15px;
+        bottom: 25px;
     }
 
     #index-explore-arrow {
-        top: 15px;
-    }
-    .border {
-        height: 12px;
-    }
-    .borderbottom {
-        border-width: 4px;
-        margin-left: -3px;
         top: 12px;
+        height: 20px;
     }
-
-
 
     /* index protucts */
     #index-protucts {
@@ -339,18 +315,9 @@
         bottom: 40px;
     }
     #index-explore-arrow {
-        top: 25px;
-
+        top: 20px;
+        height: 30px;
     }
-    .border {
-        height: 20px;
-    }
-    .borderbottom {
-         border-width: 4px;
-         margin-left: -3px;
-         top: 20px;
-     }
-
 
     /* index protucts */
     #index-protucts {
@@ -482,14 +449,7 @@
     }
     #index-explore-arrow {
         top: 30px;
-    }
-    .border {
-        height: 30px;
-    }
-    .borderbottom {
-        border-width: 5px;
-        margin-left: -4px;
-        top: 30px;
+        height: 37px;
     }
 
     /* index protucts */
