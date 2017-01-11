@@ -4,7 +4,11 @@ $(document).ready(function() {
 	function switchNode(elem){
 	    elem.parentNode.insertBefore(elem, elem.parentNode.firstChild);
 	}
-    //轮播图
+
+
+
+
+    //differentUI 轮播图
     var galleryTop = new Swiper('.gallery-top', {
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
@@ -19,7 +23,7 @@ $(document).ready(function() {
     });
     galleryTop.params.control = galleryThumbs;
     galleryThumbs.params.control = galleryTop;
-
+    
     
     if (screen.width < 768) {
     	var items = document.getElementsByClassName('iptv-menu-item-title');
@@ -39,6 +43,22 @@ $(document).ready(function() {
         var case3Img = document.getElementsByClassName('iptv-case3-image')[0];
         switchNode(case3Img);
     }
+
+    //greeting interface 轮播图
+    var greetingGalleryTop = new Swiper('.greeting-gallery-top', {
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 10,
+    });
+    var greetingGalleryThumbs = new Swiper('.greeting-gallery-thumbs', {
+        spaceBetween: 10,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        touchRatio: 0.2,
+        slideToClickedSlide: true
+    });
+    galleryTop.params.control = greetingGalleryTop;
+    galleryThumbs.params.control = greetingGalleryThumbs;
 
 
 

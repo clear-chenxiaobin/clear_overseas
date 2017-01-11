@@ -706,6 +706,14 @@ li {
 .iptv-row5 {
     margin-top:108px;
 }
+.swiper-container.greeting-gallery-top{
+    height: 322px;
+    background:url('../images/iptv/images/tv.jpg') no-repeat center center;
+    padding:10px;
+}
+.swiper-container.greeting-gallery-thumbs{
+    display: none;
+}
 .iptv-menu-ul {
     margin-top:51px;
 }
@@ -754,7 +762,6 @@ li {
 .iptv-differentUI-section-title {
     text-align: right;
     margin-bottom:30px;
-
 }
 .swiper-container {
     width: 100%;
