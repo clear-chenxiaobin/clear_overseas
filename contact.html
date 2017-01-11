@@ -18,17 +18,21 @@
     <!-- Theme style  -->
     <link rel="stylesheet" href="css/style.css">
     <!-- common style-->
+
     <link rel="stylesheet" href="css/common.css">
     <!-- index style-->
     <link rel="stylesheet" href="css/contact.css">
 
     <!--引用百度地图API-->
-    <style type="text/css">
-        html,body{margin:0;padding:0;}
-        .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
-        .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
-    </style>
-    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+    <!--<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=8TgQh43wGUfEeEhSpn4kIwv0wX2DOv31"></script>-->
+
+    <!-- google map API-->
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY5HUcTcBv4DesP6G6GqYLAam-hmzNjlU&signed_in=true&callback=initMap">
+    </script>
+
+    <!-- 高德地图API -->
+    <!--<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=55643aec7b1bbf09413e5aa6d59477a4"></script>-->
 
     <!-- Modernizr JS -->
     <script src="js/modernizr-2.6.2.min.js"></script>
@@ -121,8 +125,8 @@
                 </div>
             </div>
             <div id="contact-map" class="row animate-box">
-                <!--百度地图容器-->
-                <div id="dituContent"></div> <!--style="width:1183px;height:410px;border:#ccc solid 1px; margin-bottom: 100px;"-->
+                <!--地图容器-->
+                <div id="dituContent"></div>
             </div>
         </div>
         <div class="row copyright">
@@ -150,99 +154,84 @@
 <!-- Main -->
 <script src="js/main.js"></script>
 
-<script type="text/javascript">
-    //创建和初始化地图函数：
-    function initMap(){
-        createMap();//创建地图
-        setMapEvent();//设置地图事件
-        addMapControl();//向地图添加控件
-        addMarker();//向地图中添加marker
-    }
+<!--<script type="text/javascript">-->
+    <!--var map = new BMap.Map("dituContent");-->
+    <!--map.centerAndZoom(new BMap.Point(121.632858,31.21835), 16);-->
+    <!--map.enableScrollWheelZoom();-->
+    <!--var marker=new BMap.Marker(new BMap.Point(121.632858,31.21835));-->
+    <!--map.addOverlay(marker);-->
+    <!--var licontent="<b>Shanghai ClearTV Corp.</b><br>";-->
+    <!--licontent+="<span><strong>Address: </strong>Building 11, Lane 2277, Zuchongzhi Road, Pudong New Area, Shanghai.</span><br>";-->
+    <!--licontent+="<span><strong>Tel: </strong>0086-21-55896261-655</span><br>";-->
+    <!--licontent+="<span class=\"input\"><strong></strong><input style=\"width: 130px\" class=\"outset\" type=\"text\" name=\"origin\" value=\"\"/><input class=\"outset-but\" type=\"button\" value=\"Transit\" onclick=\"gotobaidu(1)\" /><input class=\"outset-but\" type=\"button\" value=\"Driving\"  onclick=\"gotobaidu(2)\"/><a class=\"gotob\" href=\"url=\"http://api.map.baidu.com/direction?destination=latlng:"+marker.getPosition().lat+","+marker.getPosition().lng+"|name:clear"+"®ion=上海"+"&output=html\" target=\"_blank\"></a></span>";-->
 
-    //创建地图函数：
-    function createMap(){
-        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
-        var point = new BMap.Point(121.632858,31.21835);//定义一个中心点坐标
-        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
-        window.map = map;//将map变量存储在全局
-    }
+    <!--var hiddeninput="<input type=\"hidden\" value=\""+'上海'+"\" name=\"region\" /><input type=\"hidden\" value=\"html\" name=\"output\" /><input type=\"hidden\" value=\"driving\" name=\"mode\" /><input type=\"hidden\" value=\"latlng:"+marker.getPosition().lat+","+marker.getPosition().lng+"|name:clear"+"\" name=\"destination\" />";-->
 
-    //地图事件设置函数：
-    function setMapEvent(){
-        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
-        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
-        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
-        map.enableKeyboard();//启用键盘上下左右键移动地图
-    }
+    <!--var content1 ="<form id=\"gotobaiduform\" action=\"http://api.map.baidu.com/direction\" target=\"_blank\" method=\"get\">" + licontent +hiddeninput+"</form>";-->
 
-    //地图控件添加函数：
-    function addMapControl(){
-        //向地图中添加缩放控件
-        var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
-        map.addControl(ctrl_nav);
-        //向地图中添加比例尺控件
-        var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
-        map.addControl(ctrl_sca);
-    }
+    <!--var opts1 = { width: 280 };-->
 
-    //标注点数组
-    var markerArr = [{title:"CLEAR",content:"Shanghai&nbsp;ClearTV&nbsp;&nbsp;Corp",point:"121.632849|31.218288",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
-    ];
-    //创建marker
-    function addMarker(){
-        for(var i=0;i<markerArr.length;i++){
-            var json = markerArr[i];
-            var p0 = json.point.split("|")[0];
-            var p1 = json.point.split("|")[1];
-            var point = new BMap.Point(p0,p1);
-            var iconImg = createIcon(json.icon);
-            var marker = new BMap.Marker(point,{icon:iconImg});
-            var iw = createInfoWindow(i);
-            var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
-            marker.setLabel(label);
-            map.addOverlay(marker);
-            label.setStyle({
-                borderColor:"#808080",
-                color:"#333",
-                cursor:"pointer",
-            });
+    <!--var  infoWindow = new BMap.InfoWindow(content1, opts1);-->
+    <!--marker.openInfoWindow(infoWindow);-->
+    <!--marker.addEventListener('click',function(){-->
+        <!--marker.openInfoWindow(infoWindow);-->
+    <!--});-->
 
-            (function(){
-                var index = i;
-                var _iw = createInfoWindow(i);
-                var _marker = marker;
-                _marker.addEventListener("click",function(){
-                    this.openInfoWindow(_iw);
-                });
-                _iw.addEventListener("open",function(){
-                    _marker.getLabel().hide();
-                })
-                _iw.addEventListener("close",function(){
-                    _marker.getLabel().show();
-                })
-                label.addEventListener("click",function(){
-                    _marker.openInfoWindow(_iw);
-                })
-                if(!!json.isOpen){
-                    label.hide();
-                    _marker.openInfoWindow(_iw);
-                }
-            })()
-        }
-    }
-    //创建InfoWindow
-    function createInfoWindow(i){
-        var json = markerArr[i];
-        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
-        return iw;
-    }
-    //创建一个Icon
-    function createIcon(json){
-        var icon = new BMap.Icon("images/map.png", new BMap.Size(56,75),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+23,60),offset:new BMap.Size(23,78)})
-        return icon;
-    }
+    <!--function gotobaidu(type)-->
+    <!--{-->
+        <!--if($.trim($("input[name=origin]").val())=="")-->
+        <!--{-->
+            <!--alert("Please enter a starting point!");-->
+            <!--return;-->
+        <!--}else{-->
+            <!--if(type==1)-->
+            <!--{-->
+                <!--$("input[name=mode]").val("transit");-->
+                <!--$("#gotobaiduform")[0].submit();-->
+            <!--}else if(type==2)-->
+            <!--{-->
+                <!--$("input[name=mode]").val("driving");-->
+                <!--$("#gotobaiduform")[0].submit();-->
+            <!--}-->
+        <!--}-->
+    <!--}-->
+<!--</script>-->
 
-    initMap();//创建和初始化地图
+<script>
+    // When you add a marker using a Place instead of a location, the Maps
+    // API will automatically add a 'Save to Google Maps' link to any info
+    // window associated with that marker.
+    function initMap() {
+        var map = new google.maps.Map(document.getElementById('dituContent'), {
+            zoom: 15,
+            center: {lat: 31.212680, lng: 121.626226}
+        });
+
+        var marker = new google.maps.Marker({
+            map: map,
+            // Define the place with a location, and a query string.
+            place: {
+                location: {lat: 31.212680, lng: 121.626226},
+                query: 'Google, Shanghai, China'
+
+            },
+            // Attributions help users find your site again.
+            attribution: {
+                source: 'Google Maps JavaScript API',
+                webUrl: 'https://developers.google.com/maps/'
+            }
+        });
+
+        // Construct a new InfoWindow.
+        var infoWindow = new google.maps.InfoWindow({
+            content: 'Shanghai ClearTV Corp.'
+        });
+
+        // Opens the InfoWindow when marker is clicked.
+        marker.addListener('click', function() {
+            infoWindow.open(map, marker);
+        });
+    }
 </script>
 
 </body>
