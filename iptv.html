@@ -45,11 +45,11 @@
     </div>
     <div class="container">
         <div class="row iptv-row1">
-            <div class="col-md-7 ">
+            <div class="col-md-7 col-sm-12 ">
                 <img src="images/iptv/images/tvui04.png" class="iptv-greeting-img">
                 <!-- <div class="iptv-greeting-img"></div> -->
             </div>
-            <div class="col-md-5 ">
+            <div class="col-md-5 col-sm-12">
                 <div class="iptv-greeting-txt">
                     <h2 class="h2">The Greeting Interface</h2>
                     <ul class="iptv-greeting-ul">
@@ -452,9 +452,7 @@
                         ClearTV have produced AIO with cooperation with manufacturers, such as, Samsung, Philips, Skyworth and LG and other brand manufacturers. Brand TV as carrier, customized original TV chip software and running ClearTV Terminal Software on the chip, ClearTV AIO operate with high stability. Compared with traditional display and IMS STB, ClearTV AIO without STB has the characteristics of potable and cheap.
                     </div>
                     <div class="row">
-                        <div class="col-md-6 iptv-hardware-items4-img">
-                        </div>
-                        <div class="col-md-6">
+                        <div class="col-md-12 iptv-hardware-items4-img">
                         </div>
                     </div>
                 </div>
@@ -493,21 +491,23 @@
                         <p>In 2015, Clear made an upgrade for BDH and add two hundreds points for their new hotel Bayshore.</p>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 iptv-case3-image">
                     <div class="iptv-case3-img"></div>
                 </div>
             </div>
             <div class="row iptv-case4">
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-6 col-xs-6">
                     <div class="iptv-case4-content">
                         <div class="iptv-case4-txt1 iptv-case4-txt">CLEAR IMS</div>
                         <div class="iptv-case4-img iptv-case4-img1"></div>
+                        <!-- <div class="iptv-case4-viewmore">View</div> -->
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="iptv-case4-content">
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="iptv-case4-content iptv-case4-content2">
                         <div class="iptv-case4-txt2 iptv-case4-txt">CLEAR Mobile</div>
                         <div class="iptv-case4-img iptv-case4-img2"></div>
+                        <!-- <div class="iptv-case4-viewmore">View</div> -->
                     </div>
                 </div>
             </div>
@@ -516,22 +516,5 @@
 </body>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script src="lib/swiper.jquery.min.js"></script>
-<!-- <script type="text/javascript" src="js/lnb_js.js"></script> -->
-<script>
-var galleryTop = new Swiper('.gallery-top', {
-    nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',
-    spaceBetween: 10,
-});
-var galleryThumbs = new Swiper('.gallery-thumbs', {
-    spaceBetween: 10,
-    centeredSlides: true,
-    slidesPerView: 'auto',
-    touchRatio: 0.2,
-    slideToClickedSlide: true
-});
-galleryTop.params.control = galleryThumbs;
-galleryThumbs.params.control = galleryTop;
-</script>
-
+<script type="text/javascript" src="js/iptv.js"></script>
 </html>

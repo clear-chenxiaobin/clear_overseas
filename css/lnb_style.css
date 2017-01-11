@@ -673,8 +673,7 @@ li {
     margin-top:0;
 }
 .iptv-greeting-img {
-    
-    width:574px;
+    width:100%;
 }
 .iptv-greeting-txt {
     color:#000;
@@ -759,7 +758,7 @@ li {
 }
 .swiper-container {
     width: 100%;
-    height: 300px;
+    height: 195px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -786,11 +785,9 @@ li {
 }
 
 
-
-
 .iptv-hardware-title {
     font-size: 24px;
-    line-hegiht:29px;
+    line-height:29px;
     color: #000000;
     letter-spacing: 0;
     padding-left:15px;
@@ -921,7 +918,18 @@ li {
     content:'View';
     display: inline-block;
     position: absolute;
-    bottom: 0;
+    bottom: -15px;
+    color: #0186E1;
+    font-size: 16px;
+    height: 110px;
+    height: 30px;
+    text-align: center;
+    border:1px solid #0186E1;
+    padding:5px 30px;
+    margin:0px 10px;
+    background-color: #fff;
+    left:30px;
+    box-shadow: 0 0 15px 10px #FFF;
 }
 
 .iptv-case4-img1 {
@@ -931,6 +939,260 @@ li {
 .iptv-case4-img2 {
     height:348px;
     background:url(../images/iptv/images/connect_CLEARMobile.png) no-repeat right center;
+}
+.iptv-case4-content2 {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+}
+/*移动端*/
+@media screen and (max-width: 768px) {
+    .iptv-row1 {
+        margin-top: 50px;
+    }
+    .iptv-banner {
+        background-size: 100% 300px;
+        height: 300px;
+    }
+    .iptv-banner-txt {
+        font-size: 28px;
+        letter-spacing: 0;
+        line-height: 300px;
+    }
+    .iptv-greeting-img {
+        width: 100%;
+    }
+    .iptv-row2 {
+        margin-top: 52px;
+    }
+    .iptv-row2 .h2 {
+        margin-top:0;
+        margin-bottom:15px;
+    }
+    .iptv-menu-ul {
+         margin-top: 0; 
+    }
+    .iptv-menu-ul li {
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+    }
+    .iptv-menu-items {
+        margin-top: 35px;
+    }
+
+}
+
+    @media screen and (max-width: 414px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6{
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+    }
+    .iptv-greeting-txt {
+        display: inline-block;
+        margin: 20px auto;
+    }
+
+    .iptv-greeting-txt .h2 {
+       text-align: center;
+       font-size:20px;
+    }
+  
+    .iptv-greeting-ul {
+       margin-top:10px;
+       display: block;
+    }
+    .iptv-greeting-ul li {
+       margin-top:10px;
+    }
+    .iptv-greeting-ul li span {
+        margin-left:-10px;
+    }
+    .iptv-menu-item-content {
+        width:100%;
+        padding-left: 20px;
+        margin-top:5px;
+        float:none;
+        font-size:12px;
+        line-height: 14px;
+    }
+    .iptv-menu-item-title {
+        width: 100%;
+        color:#000;
+        font-weight: bold;
+        opacity: 1;
+        filter: alpha(opacity=100);
+        text-align: left;
+        padding-left: 20px;
+        margin-top: 30px;
+        font-size:14px;
+        line-height: 16px;
+    }
+    .iptv-menu-items {
+        margin-top: 25px;
+    }
+    
+    .iptv-menu-items>li>.iptv-menu-item-content li {
+        margin-bottom: 5px;
+    }
+    
+    .iptv-menu-video {
+        margin-top: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background: #031C3D;
+    }
+
+    .iptv-row3 {
+        margin-top: 62px;
+        height:auto;
+    }
+    .iptv-differentUI-section-title {
+        font-size:20px;
+        margin-top:0;
+        margin-bottom:15px;
+    }
+    .swiper-container.gallery-thumbs.swiper-container-horizontal{
+        display: none;
+    }
+
+    .swiper-container {
+        height: 195px;
+       
+    }
+    .iptv-row4 {
+        margin-top: 0;
+    }
+    .iptv-hardware-section-title {
+        margin-top: 42px;
+        font-size: 20px;
+    }
+    .iptv-row4 .row {
+        margin-top: 50px;
+    }
+    .iptv-row4 .row:first-child {
+        margin-top: 13px;
+    }
+    .iptv-hardware-title {
+        font-size:14px;
+        line-height: 16px;
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+    }
+    .iptv-hardware-item-content, .iptv-hardware-item-title {
+        font-size:10px;
+        line-height: 12px;
+    }
+    .iptv-hardware-items4-txt {
+        font-size:10px;
+        line-height: 12px;
+        line-height: 16px;
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+    }
+
+    .iptv-hardware-title::before {
+        width: 8px;
+        height: 8px;
+        top: 3px;
+        left: 17px;
+    }
+
+    .iptv-hardware-items1-img,.iptv-hardware-items2-img,.iptv-hardware-items3-img {
+        height: 225px;
+        background-size: 168px 225px;
+    }
+
+    .iptv-hardware-items4-img {
+        background-size: 100%;
+        height: 151px;
+    }
+    .iptv-cases-section-title {
+        font-size: 20px;
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+    }
+    
+    .iptv-case-txt {
+        margin-top: 20px;
+    }
+    
+    .iptv-case-txt h2 {
+        font-size: 14px;
+        border-bottom: 1px solid #000;
+        padding-bottom: 20px;
+        display: inline-block;
+    }
+
+
+    .iptv-case-txt h2 {
+        font-size: 14px !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        padding-bottom: 5px;
+    }
+    .iptv-case-txt p {
+        margin-top: 20px;
+        opacity: 0.8;
+        font-size: 12px !important;
+        line-height: 16px;
+    }
+    .iptv-case2-img {
+        height: 412px;
+    }
+    .iptv-case3-img {
+        height:411px;
+        background-size:100%;
+    }
+    .iptv-case2 {
+        margin-top: 50px;
+    }
+    .iptv-case3 {
+        margin-top: 50px;
+        height: auto;
+    }
+
+    .iptv-case-txt h2 {
+        margin-bottom:0;
+    }
+    .iptv-case2-text, .iptv-case3-text {
+         position: static; 
+         top:0; 
+         transform: translateY(0); 
+    }
+    .iptv-case4-content:after {
+        bottom: 0px;
+        color: #0186E1;
+        font-size: 16px;
+        height: 110px;
+        height: 30px;
+        text-align: center;
+        border:1px solid #0186E1;
+        padding:5px 30px;
+        margin:0px 10px;
+        background-color: #fff;
+        left:30px;
+        box-shadow: 0 0 0 0;
+    }
+    .iptv-case4-img1,.iptv-case4-img2 {
+        height: 113px;
+        background-size: 100%;
+    }
+    .iptv-case4-txt {
+        font-size: 17px;
+        left:10%;
+    }
+
+
 }
 
 /************************IPTV 结束 *********************/
