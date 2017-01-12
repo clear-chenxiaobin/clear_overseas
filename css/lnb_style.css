@@ -999,7 +999,7 @@
      border: 1px solid #000;
  }
  
- .iptv-case4-content:after {
+/* .iptv-case4-content:after {
      content: 'View';
      display: inline-block;
      position: absolute;
@@ -1015,7 +1015,7 @@
      background-color: #fff;
      left: 30px;
      box-shadow: 0 0 15px 10px #FFF;
- }
+ }*/
  
  .iptv-case4-img1 {
      height: 348px;
@@ -1026,12 +1026,59 @@
      height: 348px;
      background: url(../images/iptv/images/connect_CLEARMobile.png) no-repeat right center;
  }
+ .iptv-case4-viewmore {
+    padding:1px 10px;
+    border:1px solid #fff;
+    background-color:#fff;
+    display: inline-block;
+    position: absolute;
+    bottom: -10px;
+    left:40px;
+ }
+
+ .iptv-case4-viewmore>div {
+    padding:4px 24px;
+    border: 1px solid #0186E1;
+    display: inline-block;
+ }
  
  .iptv-case4-content2 {
      opacity: 0.5;
      filter: alpha(opacity=50);
  }
- /*移动端*/
+ /*----------------------------------移动端-----------------------------------------*/
+
+ @media screen and (max-width: 1200px){
+    .iptv-case4-viewmore {
+       background-color:transparent;
+       bottom: 10px;
+       left:0;
+       display: block;
+       padding:0;
+       width:100%;
+       border:none;
+
+    }
+
+    .iptv-case4-viewmore>div {
+       border: 1px solid #fff;
+       color:#fff;
+       display: block;
+       margin:10px auto;
+       width:60px;
+       text-align: center;
+       padding:0;
+       height: 20px;
+       line-height: 20px;
+    }
+ }
+
+
+ @media screen and (max-width: 992px){
+     .iptv-case4-img1,.iptv-case4-img2 {
+        background-size: 100%;
+     }
+ }
  
  @media screen and (max-width: 768px) {
      .iptv-row1 {
@@ -1071,6 +1118,43 @@
      }
      .iptv-case2, .iptv-case3 {
         margin-top:0;
+     }
+
+     .iptv-case4-content {
+        position: relative;
+     }
+
+     .iptv-case4-img {
+        background-size: 100%;
+     }
+
+     .iptv-case4-viewmore {
+        background-color:rgba(0,0,0,.6);
+        bottom: 0;
+        left:0;
+        display: block;
+        padding:0;
+        width:100%;
+        border:none;
+
+     }
+
+     .iptv-case4-viewmore>div {
+        border: 1px solid #fff;
+        color:#fff;
+        display: block;
+        margin:10px auto;
+        width:60px;
+        text-align: center;
+        padding:0;
+        height: 20px;
+        line-height: 20px;
+     }
+     .iptv-case4-txt {
+        font-size: 31px;
+        left:0;
+        top:70%;
+        transform: translateY(0);
      }
 
  }
@@ -1298,6 +1382,12 @@
      .iptv-case4-txt {
          font-size: 17px;
          left: 10%;
+         top:50%;
+         transform: translateY(0);
+     }
+     .iptv-case4-txt {
+        font-size: 14px;
+        left:0;
      }
  }
 
