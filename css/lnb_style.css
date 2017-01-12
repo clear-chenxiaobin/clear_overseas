@@ -706,10 +706,17 @@ li {
 .iptv-row5 {
     margin-top:108px;
 }
-.swiper-container.greeting-gallery-top{
-    height: 322px;
-    background:url('../images/iptv/images/tv.jpg') no-repeat center center;
-    padding:10px;
+.greeting-slide-img {
+    width:100%;
+}
+.greeting-gallery-top-mask {
+    position: absolute;
+    top:0;
+    z-index: 2;
+    width:100%;
+}
+.greeting-gallery-top-mask  img {
+    width:100%;
 }
 .swiper-container.greeting-gallery-thumbs{
     display: none;
@@ -760,7 +767,7 @@ li {
 }
 .iptv-row3 {
     margin-top:180px;
-    height:753px;
+    /*height:753px;*/
 }
 /* differentUI */
 .iptv-differentUI-row {
@@ -771,12 +778,16 @@ li {
     margin-bottom:30px;
     margin-top:0;
 }
+.iptv-differentUI-slide-img {
+    width:100%;
+}
 .swiper-container {
     width: 100%;
-    height: 195px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
 }
+
 .swiper-slide {
     background-size: cover;
     background-position: center;
@@ -789,6 +800,9 @@ li {
     height: 20%;
     box-sizing: border-box;
     padding: 10px 0;
+}
+.iptv-differentUI-gallery-thumbs{
+    height:150px;
 }
 .gallery-thumbs .swiper-slide {
     width: 25%;
