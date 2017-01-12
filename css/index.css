@@ -27,6 +27,15 @@
     color: white;
 }
 
+#index-explore-arrow {
+    margin: 0 auto;
+    width: 0px;
+    position: relative;
+}
+#index-explore-arrow > img {
+    height: 100%;
+}
+
 /* 公共protucts */
 .index-protucts-box {
     text-align: center;
@@ -42,6 +51,10 @@
 
 #index-protucts .index-protucts-text > h3 {
     color: #000000;
+}
+
+#index-protucts .index-protucts-unfinished h3 {
+    color: #828282;
 }
 
 /* 视频 */
@@ -80,7 +93,7 @@
 }
 
 #index-contact {
-    background-image: url('../images/index/contact.png');
+    background-image: url('../images/index/contact.jpg');
     /*background-attachment: fixed;*/
     background-repeat: no-repeat;
     background-size: cover;
@@ -138,7 +151,12 @@
     /* explore */
     #index-explore {
         margin-left: -45px;
-        bottom: 44px;
+        bottom: 25px;
+    }
+
+    #index-explore-arrow {
+        top: 12px;
+        height: 20px;
     }
 
     /* index protucts */
@@ -204,6 +222,10 @@
 
     #index-project .project-content {
         padding: 0;
+    }
+
+    #index-protucts .index-protucts-unfinished {
+        display: none;
     }
 
     /* index-case-box */
@@ -280,7 +302,7 @@
     }
 }
 
-/* PC端*/
+/* Pad端*/
 @media (min-width: 768px) {
     .fh5co-nav .container {
         width: 750px;
@@ -290,7 +312,11 @@
     #index-explore {
         width: 200px;
         margin-left: -100px;
-        bottom: 64px;
+        bottom: 40px;
+    }
+    #index-explore-arrow {
+        top: 20px;
+        height: 30px;
     }
 
     /* index protucts */
@@ -301,6 +327,11 @@
 
     #index-protucts .row:nth-child(2) {
         margin-top: 42px;
+    }
+
+    #index-protucts .index-protucts-unfinished {
+        display: block;
+        color: #828282;
     }
 
     .index-protucts-box {
@@ -414,7 +445,11 @@
     #index-explore {
         width: 200px;
         margin-left: -100px;
-        bottom: 79px;
+        bottom: 55px;
+    }
+    #index-explore-arrow {
+        top: 30px;
+        height: 37px;
     }
 
     /* index protucts */
@@ -535,7 +570,11 @@
     /* explore */
     #index-explore {
         margin-left: -100px;
-        bottom: 117px;
+        bottom: 80px;
+    }
+
+    #index-explore-arrow {
+        top: 45px;
     }
 
     /* index protucts */

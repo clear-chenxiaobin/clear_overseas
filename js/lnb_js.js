@@ -56,4 +56,9 @@
                 $('.left.carousel-control.ca-arrow').trigger('click')
         });
 
+
+
+
+        // iptv页面开始
+
 })($, window)
