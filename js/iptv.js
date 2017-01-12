@@ -5,6 +5,22 @@ $(document).ready(function() {
 	    elem.parentNode.insertBefore(elem, elem.parentNode.firstChild);
 	}
 
+	//greeting interface 轮播图
+	var greetingGalleryTop = new Swiper('.greeting-gallery-top', {
+	    nextButton: '.swiper-button-next',
+	    prevButton: '.swiper-button-prev',
+	    spaceBetween: 10,
+	});
+	var greetingGalleryThumbs = new Swiper('.greeting-gallery-thumbs', {
+	    spaceBetween: 10,
+	    centeredSlides: true,
+	    slidesPerView: 'auto',
+	    touchRatio: 0.2,
+	    slideToClickedSlide: true
+	});
+	greetingGalleryTop.params.control = greetingGalleryTop;
+	greetingGalleryThumbs.params.control = greetingGalleryThumbs;
+
 
 
 
@@ -44,21 +60,7 @@ $(document).ready(function() {
         switchNode(case3Img);
     }
 
-    //greeting interface 轮播图
-    var greetingGalleryTop = new Swiper('.greeting-gallery-top', {
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        spaceBetween: 10,
-    });
-    var greetingGalleryThumbs = new Swiper('.greeting-gallery-thumbs', {
-        spaceBetween: 10,
-        centeredSlides: true,
-        slidesPerView: 'auto',
-        touchRatio: 0.2,
-        slideToClickedSlide: true
-    });
-    galleryTop.params.control = greetingGalleryTop;
-    galleryThumbs.params.control = greetingGalleryThumbs;
+
 
 
 

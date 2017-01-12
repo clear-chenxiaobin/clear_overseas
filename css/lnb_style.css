@@ -714,6 +714,10 @@ li {
 .swiper-container.greeting-gallery-thumbs{
     display: none;
 }
+
+.h2.iptv-menu {
+    margin-top:10px;
+}
 .iptv-menu-ul {
     margin-top:51px;
 }
@@ -729,7 +733,7 @@ li {
     margin-bottom: 25px;
 }
 .iptv-menu-video {
-    margin-top:150px;
+    margin-top:113px;
 }
 .iptv-menu-ul li {
     font-size:16px;
@@ -756,12 +760,16 @@ li {
 }
 .iptv-row3 {
     margin-top:180px;
-    height:621px;
+    height:753px;
 }
 /* differentUI */
+.iptv-differentUI-row {
+    height:100%;
+}
 .iptv-differentUI-section-title {
     text-align: right;
     margin-bottom:30px;
+    margin-top:0;
 }
 .swiper-container {
     width: 100%;
@@ -790,6 +798,7 @@ li {
 .gallery-thumbs .swiper-slide-active {
     opacity: 1;
 }
+
 
 
 .iptv-hardware-title {
@@ -822,6 +831,12 @@ li {
 .iptv-row4 .row {
     margin-top: 151px;
 }
+.iptv-row4 .iptv-hardware-firstrow.row {
+    margin-top:0;
+}
+.iptv-row4 .iptv-hardware-secondrow {
+    margin-top:81px;
+}
 .iptv-hardware-items4-txt {
     margin-top:24px;
     font-size:16px;
@@ -829,7 +844,7 @@ li {
 
 }
 .iptv-hardware-item-content {
-    font-size: 16px;
+    font-size: 12px;
     opacity: 0.6;
     padding-left: 20px;
 }
