@@ -65,7 +65,7 @@ body {
 
 .button-b:hover {
     background-color: #3FAFF2;
-    color: #fff;
+    color: #fff !important;
 }
 
 .button-b:active {
