@@ -331,7 +331,7 @@
 
     #index-protucts .index-protucts-unfinished {
         display: block;
-        color: #828282;
+        opacity: 0.3;
     }
 
     .index-protucts-box {

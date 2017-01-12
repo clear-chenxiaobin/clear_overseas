@@ -256,6 +256,12 @@ body {
 
 /* 1280*768分辨率 */
 @media (min-width: 1250px) {
+    /*banner 大标题————应用页面：HOME IPTV IMS*/
+    .caption-banner {
+        font-size: 80px !important;
+        text-transform: none !important;
+    }
+
     .fh5co-nav .container {
         width: 1210px;
     }
