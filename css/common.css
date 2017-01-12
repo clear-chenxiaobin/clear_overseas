@@ -290,6 +290,10 @@ body {
         height: 33px;
     }
 
+    .caption-banner {
+            font-size: 80px !important;
+            text-transform: none !important;
+        }
     /* copyright */
     #footer-copyright {
         bottom: 30px;
