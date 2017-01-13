@@ -1,4 +1,4 @@
- 清除内外边距 */ body,
+body,
  h1,
  h2,
  h3,
@@ -518,7 +518,7 @@
      border: 0px;
  }
  
- @media screen and (max-width: 1920px) {
+ /*@media screen and (max-width: 1920px) {*/
      .ca-modal-item-1,
      .ca-modal-item-2,
      .ca-modal-item-3,
@@ -544,7 +544,7 @@
      .modal-body .ca-model-item-text p {
          line-height: 18px;
      }
- }
+ /*}*/
  
  @media screen and (max-width: 1280px) {
      .ca-modal-item-1,
