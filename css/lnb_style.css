@@ -153,6 +153,32 @@
  html {
      overflow-y: scroll;
  }
+
+
+
+ /* ----------------cases部分 和 iptv 页面--------------------*/
+ a:active,a:link,a:visited {
+     text-decoration: none;
+ }
+#footer-copyright {
+    position: relative;
+    left:50%;
+    margin-left:-100px;
+    margin-top:50px;
+    width:200px;
+}
+#page {
+    overflow-x: initial;
+}
+
+.container.caseList #footer-copyright small{
+    color:#fff;
+}
+
+
+
+
+
  /* ---------------------------------------------case 开始-----------------------------------------------------*/
  
  * {
@@ -223,14 +249,18 @@
      color: #fff;
  }
  
- .ca_txt {
+.container.caseList  div.ca_txt{
      line-height: 29px;
      margin-top: 164px;
      font-size: 24px;
      font-family: helvetica;
-     color: #FFFFFF;
+     color: #ffffff;
      letter-spacing: 0;
  }
+ .container.caseList  div.ca_txt h2{
+      color: #ffffff;
+  }
+
  
  h2 {
      font-size: 28px !important;
@@ -264,6 +294,7 @@
      padding: 9px;
      font-size: 20px;
      font-family: helvetica;
+     color:#fff;
  }
  /*手机端 768以下 就当作手机端*/
  
