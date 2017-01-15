@@ -649,6 +649,15 @@ body,
  }
  /************************caseDetail 结束 *********************/
  /************************IPTV 开始 *********************/
+
+ /*common css start*/
+.iptv-divider {
+    border-bottom: 2px solid rgba(0,0,0,.2);
+    margin-top: 65px;
+    width:100%;
+}
+
+  /*common css end*/
  /*default是在1280和1920之间的*/
  
  h1,
@@ -685,12 +694,13 @@ body,
      width: 100%;
  }
  
- .iptv-banner-txt {
+ .iptv-banner .iptv-banner-txt.h2 {
      line-height: 667px;
      font-size: 80px;
      color: #FFFFFF;
      letter-spacing: -2.38px;
      margin-top: 0;
+     font-weight: 100;
  }
  
  .iptv-greeting-img {
@@ -725,15 +735,15 @@ body,
  }
  
  .iptv-row2 {
-     margin-top: 165px;
+     margin-top: 108px;
  }
  
  .iptv-row4 {
-     margin-top: 180px;
+     margin-top: 115px;
  }
  
  .iptv-row5 {
-     margin-top: 108px;
+     margin-top: 43px;
  }
  
  .greeting-slide-img {
@@ -811,7 +821,7 @@ body,
  }
  
  .iptv-row3 {
-     margin-top: 180px;
+     margin-top: 115px;
      /*height:753px;*/
  }
  /* differentUI */
@@ -1015,7 +1025,12 @@ body,
      background: url(../images/iptv/images/case03.png) no-repeat center center;
      background-size: 100%;
  }
- 
+ .iptv-case4 {
+    margin-top:79px;
+ }
+ .iptv-case-divider .iptv-divider {
+    margin-top:0;
+ }
  .iptv-case4-txt {
      position: absolute;
      font-size: 45px;
