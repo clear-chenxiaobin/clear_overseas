@@ -168,7 +168,7 @@ body,
     width:200px;
 }
 #page {
-    overflow-x: initial;
+    overflow-x: hidden;
 }
 
 .container.caseList #footer-copyright small{
