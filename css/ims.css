@@ -28,7 +28,6 @@ img {
     display: block;
 }
 
-
 /*垂直居中end*/
 
 /*banner 容器*/
@@ -106,37 +105,79 @@ img {
     padding-bottom: 3em;
 }
 
-/*console部分*/
-.divs h1 {
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.divs .division:nth-of-type(odd) {
-    background: #F0F0F0;
-}
-
-.console h1,
 .hardware h1 {
     font-size: 44px;
 }
 
-.console ul,
 .hard-cap ul {
     list-style-type: disc;
     color: #0186E1;
     font-size: 26px;
 }
 
-.console ul span {
+
+/**=========================
+ 轮播图样式
+============================**/
+#features ul {
+    display: inline-block;
+    vertical-align: top;
+    list-style-type: disc;
+    color: #0186E1;
+    font-size: 26px;
+}
+
+#features .swiper-container {
+    display: inline-block;
+    width: 60%;
+    margin-bottom: 3em;
+    padding-bottom: 2em;
+}
+
+#features section:nth-of-type(odd) .swiper-container {
+    float: right;
+}
+
+#features section:nth-of-type(2n) .swiper-container {
+    float: left;
+}
+
+#features section:nth-of-type(2n) ul {
+    float: right;
+}
+
+#features section:nth-of-type(2n) .layout,
+#features section:nth-of-type(2n) .layout h1 {
+    list-style: none;
+    color: transparent;
+}
+
+#features .cap {
+    margin-top: 2em;
+}
+
+#features section:nth-of-type(odd) .cap {
+    text-align: left;
+}
+
+#features section:nth-of-type(2n) .cap {
+    text-align: right;
+}
+
+#features ul li span {
     color: #000000;
     font-size: 16px;
 }
 
-.console-img img {
-    height: 70%;
+#features section:nth-of-type(odd) {
+    background: #F0F0F0;
 }
-/*console部分 end*/
+
+
+
+/**=========================
+ 轮播图样式 end
+============================**/
 
 /*hardware*/
 .hardware .division {
@@ -166,8 +207,6 @@ img {
     width: 80%;
     margin: 0 auto;
 }
-
-/*hardware end*/
 
 /*cases begin*/
 .cases p {
@@ -295,8 +334,8 @@ footer .container:last-child {
 
     .survey .valign-wrapper,
     .cases .valign-wrapper,
-    .hardware .valign-wrapper,
-    .divs .valign-wrapper {
+    .hardware .valign-wrapper
+    /*.divs .valign-wrapper*/ {
         display: block;
     }
 
@@ -308,11 +347,23 @@ footer .container:last-child {
         padding-left: 1em;
     }
     /*survey 部分 end*/
-
-    /*console部分*/
-    .console-img {
-        padding: 0;
+    #features ul {
+        line-height: 1.1;
     }
+
+    #features ul li span {
+        color: #000000;
+        font-size: 12px;
+    }
+
+    #features section:nth-of-type(odd) .swiper-container {
+        margin-right: -4.5em;
+    }
+
+    #features section:nth-of-type(2n) .swiper-container {
+        margin-left: -4.5em;
+    }
+    /*console部分*/
 
     .cases .container,
     .cases .col-xs-12:first-child {
@@ -320,14 +371,9 @@ footer .container:last-child {
         padding-right: 0;
     }
 
-    .divs h1,
     .hardware h1,
     .cases h1 {
         font-size: 20px;
-    }
-
-    .console ul span {
-        font-size: 12px;
     }
 
     .division {
@@ -335,7 +381,6 @@ footer .container:last-child {
         padding-bottom: 2em;
     }
 
-    /*console部分 end*/
     /*hardware 部分*/
 
     .hard-cap li span {
@@ -412,20 +457,13 @@ footer .container:last-child {
     .item {
         font-size: 16px;
     }
-    .divs .division:nth-of-type(odd) .container {
-        width: 100%;
-        margin-right: -10%;
-        margin-left: auto;
-        padding-left: 0;
-        padding-right: 15px;
+
+    #features section:nth-of-type(odd) .swiper-container {
+        margin-right: -3em;
     }
 
-    .divs .division:nth-of-type(even) .container {
-        width: 105%;
-        margin-left: -15%;
-        margin-right: auto;
-        padding-right: 0;
-        padding-left: 15px;
+    #features section:nth-of-type(2n) .swiper-container {
+        margin-left: -3em;
     }
 
     .cases .row:nth-of-type(2) {
@@ -439,22 +477,6 @@ footer .container:last-child {
     }
     .col-2 {
         width: 40%;
-    }
-
-    .divs .division:nth-of-type(odd) .container {
-        width: 100%;
-        margin-right: -10%;
-        margin-left: auto;
-        padding-left: 0;
-        padding-right: 15px;
-    }
-
-    .divs .division:nth-of-type(even) .container {
-        width: 105%;
-        margin-left: -15%;
-        margin-right: auto;
-        padding-right: 0;
-        padding-left: 15px;
     }
 
     .cases .row {
@@ -475,7 +497,8 @@ footer .container:last-child {
 }
 
 /* 1920*1080分辨率 */
-@media (min-width: 1800px) {
+@media (min-width: 1500px) {
+/*@media (min-width: 1800px) {*/
     .col-3 {
         width: 60%;
     }
