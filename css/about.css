@@ -1,6 +1,7 @@
 /*background image*/
 #page {
-    background-image: url(../images/about/about-bg.png);
+
+    background: #313944 url(../images/about/about-bg.png) no-repeat center bottom;
 }
 
 #fh5co-header {
@@ -12,6 +13,27 @@
 }
 .container {
     position: relative;
+}
+
+.fh5co-nav {
+    position: relative;
+    margin-bottom: 5em;
+}
+
+.display-t, .display-tc {
+    height: auto !important;
+}
+
+
+p {
+    margin-bottom: 0;
+}
+
+/*手机端*/
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px !important;
+    }
 }
 
 @media (min-width: 992px) {
@@ -233,18 +255,59 @@
     }
 }
 
-
-.fh5co-staff .image {
-    margin-top: 57px;
-    width: 167px;
-    height: 217px;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    border-radius: 0;
-}
-
 .div-cer {
     margin-bottom: 1.5em;
 }
 
+.certificate {
+    padding: 0;
+}
+
+.iconbox {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,.8);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.iconbox:hover {
+    background: rgba(255, 255, 255, 1);
+}
+.close {
+    position: relative;
+    width: 70%;
+    height: 70%;
+    overflow: hidden;
+}
+
+.close::before, .close::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: #000;
+}
+.close::before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.close::after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
