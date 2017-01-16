@@ -1,4 +1,4 @@
- 清除内外边距 */ body,
+body,
  h1,
  h2,
  h3,
@@ -153,6 +153,32 @@
  html {
      overflow-y: scroll;
  }
+
+
+
+ /* ----------------cases部分 和 iptv 页面--------------------*/
+ a:active,a:link,a:visited {
+     text-decoration: none;
+ }
+#footer-copyright {
+    position: relative;
+    left:50%;
+    margin-left:-100px;
+    margin-top:50px;
+    width:200px;
+}
+#page {
+    overflow-x: initial;
+}
+
+.container.caseList #footer-copyright small{
+    color:#fff;
+}
+
+
+
+
+
  /* ---------------------------------------------case 开始-----------------------------------------------------*/
  
  * {
@@ -223,14 +249,18 @@
      color: #fff;
  }
  
- .ca_txt {
+.container.caseList  div.ca_txt{
      line-height: 29px;
      margin-top: 164px;
      font-size: 24px;
      font-family: helvetica;
-     color: #FFFFFF;
+     color: #ffffff;
      letter-spacing: 0;
  }
+ .container.caseList  div.ca_txt h2{
+      color: #ffffff;
+  }
+
  
  h2 {
      font-size: 28px !important;
@@ -264,6 +294,7 @@
      padding: 9px;
      font-size: 20px;
      font-family: helvetica;
+     color:#fff;
  }
  /*手机端 768以下 就当作手机端*/
  
@@ -487,7 +518,7 @@
      border: 0px;
  }
  
- @media screen and (max-width: 1920px) {
+ /*@media screen and (max-width: 1920px) {*/
      .ca-modal-item-1,
      .ca-modal-item-2,
      .ca-modal-item-3,
@@ -513,7 +544,7 @@
      .modal-body .ca-model-item-text p {
          line-height: 18px;
      }
- }
+ /*}*/
  
  @media screen and (max-width: 1280px) {
      .ca-modal-item-1,
@@ -618,6 +649,15 @@
  }
  /************************caseDetail 结束 *********************/
  /************************IPTV 开始 *********************/
+
+ /*common css start*/
+.iptv-divider {
+    border-bottom: 2px solid rgba(0,0,0,.2);
+    margin-top: 65px;
+    width:100%;
+}
+
+  /*common css end*/
  /*default是在1280和1920之间的*/
  
  h1,
@@ -648,18 +688,19 @@
  }
  
  .iptv-banner {
-     background: url("../images/iptv/images/headbg.png") no-repeat center center rgba(0, 12, 26, 1);
+     background: url("../images/iptv/images/headbg.jpg") no-repeat center center rgba(0, 12, 26, 1);
      text-align: center;
      height: 667px;
      width: 100%;
  }
  
- .iptv-banner-txt {
+ .iptv-banner .iptv-banner-txt.h2 {
      line-height: 667px;
      font-size: 80px;
      color: #FFFFFF;
      letter-spacing: -2.38px;
      margin-top: 0;
+     font-weight: 100;
  }
  
  .iptv-greeting-img {
@@ -694,15 +735,15 @@
  }
  
  .iptv-row2 {
-     margin-top: 165px;
+     margin-top: 108px;
  }
  
  .iptv-row4 {
-     margin-top: 180px;
+     margin-top: 115px;
  }
  
  .iptv-row5 {
-     margin-top: 108px;
+     margin-top: 43px;
  }
  
  .greeting-slide-img {
@@ -780,7 +821,7 @@
  }
  
  .iptv-row3 {
-     margin-top: 180px;
+     margin-top: 115px;
      /*height:753px;*/
  }
  /* differentUI */
@@ -984,7 +1025,12 @@
      background: url(../images/iptv/images/case03.png) no-repeat center center;
      background-size: 100%;
  }
- 
+ .iptv-case4 {
+    margin-top:79px;
+ }
+ .iptv-case-divider .iptv-divider {
+    margin-top:0;
+ }
  .iptv-case4-txt {
      position: absolute;
      font-size: 45px;

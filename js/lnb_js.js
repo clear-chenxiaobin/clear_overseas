@@ -48,17 +48,31 @@
         });
 
         // 触发 移动端 左右滑动
-        $('#myModal .carousel-inner .item').on("swipeleft", function() {
-                 $('.right.carousel-control.ca-arrow').trigger('click')
-        });
-        $('#myModal .carousel-inner .item').on("swiperight", function() {
-               
-                $('.left.carousel-control.ca-arrow').trigger('click')
-        });
+       // $('#myModal .carousel-inner .item').on("swipeleft", function() {
+        //          $('.right.carousel-control.ca-arrow').trigger('click')
+        // });
+        // $('#myModal .carousel-inner .item').on("swiperight", function() {
+        //
+        //         $('.left.carousel-control.ca-arrow').trigger('click')
+        // });
+
+
+    $("#myModal .carousel-inner .item").swipe({
+        swipeLeft:function(event, direction, distance, duration, fingerCount) {
+            //This only fires when the user swipes left
+            $('.right.carousel-control.ca-arrow').trigger('click')
+        },
+        swipeRight:function(event, direction, distance, duration, fingerCount) {
+            //This only fires when the Rightuser swipes right
+            $('.left.carousel-control.ca-arrow').trigger('click')
+        }
+
+    });
 
 
 
 
-        // iptv页面开始
+
+    // iptv页面开始
 
 })($, window)
