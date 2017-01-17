@@ -178,7 +178,7 @@ a:active,a:link,a:visited {
 }
 
 .container.caseList #footer-copyright small{
-    color:#fff;
+    color:#828282;
 }
 
 
@@ -204,6 +204,7 @@ body {
     margin: 262px auto 0;
     width: 1117px;
     line-height: 60px;
+    text-align: center;
 }
 
 .caseList {
@@ -230,8 +231,18 @@ body {
     width: 33.33%;
 }
 
+.caseList ul.cases li .case_mask  {
+    opacity:0;
+}
+
+.caseList ul.cases li:hover .case_mask  {
+    opacity:1;
+}
+
 .caseList ul.cases li img {
     width: 100%;
+    height:100%;
+    display: inline-block;
 }
 
 .caseList ul.cases li:hover .case_mask {
@@ -255,6 +266,7 @@ body {
     color: #fff;
 }
 
+
 .container.caseList  div.ca_txt{
     line-height: 29px;
     margin-top: 164px;
@@ -262,6 +274,9 @@ body {
     font-family: helvetica;
     color: #ffffff;
     letter-spacing: 0;
+}
+.caseList #page .percase.case1  div.ca_txt {
+    margin-top: 120px;
 }
 .container.caseList  div.ca_txt h2{
     color: #ffffff;
@@ -305,6 +320,11 @@ h2 {
 /*手机端 768以下 就当作手机端*/
 
 @media screen and (max-width: 768px) {
+
+    .caseList ul.cases li .case_mask  {
+        opacity:1;
+    }
+
     .ca_pagehead {
         font-size: 28px;
         margin: 213px auto 0;
@@ -315,6 +335,7 @@ h2 {
         font-size: 38px;
         color: #FFFFFF;
         letter-spacing: -0.63px;
+        text-align:left;
     }
     .caseList {
         width: 100%;
@@ -497,6 +518,10 @@ h2 {
     position: absolute;
     top: -50px;
     right: 20px;
+}
+
+#myCarousel .carousel-inner >.item>.row {
+    border:1px solid
 }
 
 #myCarousel .carousel-inner .item .ca-model-item-text .h2 {
