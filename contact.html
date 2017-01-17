@@ -40,7 +40,6 @@
 
 <div id="page">
     <nav class="fh5co-nav" role="navigation">
-        <div class="head-bg"></div>
         <div class="container">
             <div class="row">
                 <div class="col-xs-2">
@@ -64,52 +63,52 @@
             </div>
         </div>
     </nav>
+    <div class="head-bg"></div>
 
     <!-- CONTACT -->
     <div id="contact">
         <div class="container">
             <div class="row animate-box contact-box">
-                <div id="contact-text" class="col-md-8 col-md-offset-2 modal-body text-white">
-                    <div class="row text-group">
-                        <div class="col-md-3 col-sm-3 col-xs-12">Adress:</div>
-                        <div class="col-md-9 col-sm-9 col-xs-12">Building 11, Lane 2277, Zuchongzhi Road, Pudong New Area, Shanghai.</div>
+                <div class="col-md-8 col-md-offset-2 modal-body text-white">
+                    <div class="row des-group">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 contact-item">Address:</div>
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 contact-des">Building 11, Lane 2277, Zuchongzhi Road, Pudong New Area, Shanghai.</div>
                     </div>
-                    <div class="row text-group">
-                        <div class="col-md-3 col-sm-3 col-xs-12">Sales Director:</div>
-                        <div class="col-md-9 col-sm-9 col-xs-12"></div>
+                    <div class="row des-group">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 contact-item">Sales Director:</div>
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 contact-des"></div>
                     </div>
-                    <div class="row text-group">
-                        <div class="col-md-3 col-sm-3 col-xs-12">Skype:</div>
-                        <div class="col-md-9 col-sm-9 col-xs-12"></div>
+                    <div class="row des-group">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 contact-item">Skype:</div>
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 contact-des"></div>
                     </div>
-                    <div class="row text-group">
-                        <div class="col-md-3 col-sm-3 col-xs-12">Mobile:</div>
-                        <div class="col-md-9 col-sm-9 col-xs-12">+86 </div>
+                    <div class="row des-group">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 contact-item">Mobile:</div>
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 contact-des">+86 </div>
                     </div>
-                    <div class="row text-group">
-                        <div class="col-md-3 col-sm-3 col-xs-12">Tel:</div>
-                        <div class="col-md-9 col-sm-9 col-xs-12">0086-21-55896261-655</div>
+                    <div class="row des-group">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 contact-item">Tel:</div>
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 contact-des">0086-21-55896261-655</div>
                     </div>
-                    <div class="row text-group">
-                        <div class="col-md-3 col-sm-3 col-xs-12">Fax:</div>
-                        <div class="col-md-9 col-sm-9 col-xs-12">0086-21-55896261</div>
+                    <div class="row des-group">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 contact-item">Fax:</div>
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 contact-des">0086-21-55896261</div>
                     </div>
-                    <div class="row text-group">
-                        <div class="col-md-3 col-sm-3 col-xs-12">Email:</div>
-                        <div class="col-md-9 col-sm-9 col-xs-12">chenyinyin@cleartv.cn</div>
+                    <div class="row des-group">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 contact-item">Email:</div>
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 contact-des">chenyinyin@cleartv.cn</div>
                     </div>
                 </div>
-
                 <div class="col-md-8 col-md-offset-2 modal-body">
-                    <form class="contact-form" action="mailto:overseasales@cleartv.cn">
+                    <form class="contact-form" action="mailto:overseasales@cleartv.cn" method="get">
                         <div class="form-group">
-                            <input class="form-control" type="text" placeholder="Name" required>
+                            <input name="subject" class="form-control" type="text" placeholder="Name" required>
                         </div>
                         <div class="form-group">
-                            <input class="form-control" type="text" placeholder="Email" required>
+                            <input name="mail" class="form-control" type="text" placeholder="Email" required>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+                            <textarea name="body" class="form-control" rows="4" placeholder="Message"></textarea>
                         </div>
                         <div class="contact-submit">
                             <button type="submit" class="button button-b">Send Message</button>
@@ -122,13 +121,11 @@
                 <div id="dituContent"></div>
             </div>
         </div>
-        <div class="row copyright">
-            <div class="row text-center">
-                <p>
-                    <small class="block">&copy; Shanghai ClearTV Corp.</small>
-                </p>
+        <footer id="footer-copyright">
+            <div class="col-md-12 text-center">
+                <small class="block">&copy; Shanghai ClearTV Corp.</small>
             </div>
-        </div>
+        </footer>
     </div>
 </div>
 
