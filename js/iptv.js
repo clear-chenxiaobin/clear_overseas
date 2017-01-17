@@ -10,6 +10,9 @@ $(document).ready(function() {
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
         spaceBetween: 10,
+        autoplay:2500
+
+
     });
     var greetingGalleryThumbs = new Swiper('.greeting-gallery-thumbs', {
         spaceBetween: 10,
@@ -32,10 +35,10 @@ $(document).ready(function() {
     });
     var galleryThumbs = new Swiper('.gallery-thumbs', {
         spaceBetween: 10,
-        centeredSlides: true,
+        centeredSlides: false,
         slidesPerView: 'auto',
         touchRatio: 0.2,
-        slideToClickedSlide: true
+        slideToClickedSlide: true,
     });
     galleryTop.params.control = galleryThumbs;
     galleryThumbs.params.control = galleryTop;
@@ -59,5 +62,7 @@ $(document).ready(function() {
         var case3Img = document.getElementsByClassName('iptv-case3-image')[0];
         switchNode(case3Img);
     }
+
+
 
 })
