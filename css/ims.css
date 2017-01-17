@@ -256,8 +256,9 @@ footer .col-md-6:last-child:after {
     background-image: url(../images/ims/connect_CLEARMobile.jpg);
 }
 
-footer .col-md-6:last-child {
-    opacity: .5;
+footer .col-md-6:last-child,
+.view-btn:last-child .inner-btn {
+    opacity: .2;
 }
 
 footer .valign-wrapper {
@@ -426,7 +427,7 @@ footer .container:last-child {
         padding: 0 15px;
     }
     .padding {
-        background: rgba(0,0,0,.6);
+        background: rgba(0,0,0,.3);
         padding: 6% 0;
     }
 
