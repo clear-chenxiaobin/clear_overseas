@@ -366,6 +366,7 @@ footer .container:last-child {
     }
     /*console部分*/
 
+
     .cases .container,
     .cases .col-xs-12:first-child {
         padding-left: 0;
@@ -484,10 +485,6 @@ footer .container:last-child {
         width: 1102px;
     }
 
-    .division:nth-of-type(2n) .text-right {
-        text-align: left;
-    }
-
     .division:nth-of-type(2n) .text-right h1 {
         padding-left: 0;
     }
@@ -511,9 +508,6 @@ footer .container:last-child {
         width: 1102px;
     }
 
-    .division:nth-of-type(2n) .text-right {
-        text-align: left;
-    }
     .division:nth-of-type(2n) .text-right h1 {
         padding-left: 0;
     }
