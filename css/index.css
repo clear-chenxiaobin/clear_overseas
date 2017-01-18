@@ -782,5 +782,10 @@
         width: 40%;
         order: 2;
     }
-
+}
+@media screen and (min-width: 1200px) {
+    .inner-box,
+    .button2 {
+        width: 60%;
+    }
 }
