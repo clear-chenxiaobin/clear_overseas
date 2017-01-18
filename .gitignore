@@ -1,5 +1,6 @@
 *.iml
 *.xml
+*.DS_store
 video/IPTVvideo.mp4
 video/
 .idea/
