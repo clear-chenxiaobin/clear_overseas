@@ -283,7 +283,7 @@
         font-size: 10px;
     }
     #index-contact .index-contact-form .form-group {
-        margin-bottom: 8px;
+        margin-bottom: 1em;
     }
     #index-contact .index-contact-form .form-group input {
         height: 20px;
@@ -425,7 +425,7 @@
         font-size: inherit;
     }
     #index-contact .index-contact-form .form-group {
-        margin-bottom: 15px;
+        margin-bottom: 1em;
     }
     #index-contact .index-contact-form .form-group input {
         height: 40px;
@@ -541,7 +541,7 @@
         padding: 0px 10px;
     }
     #index-contact .index-contact-form .form-group {
-        margin-bottom: 30px;
+        margin-bottom: 1em;
     }
     #index-contact .index-contact-form .form-group input {
         height: 40px;
@@ -662,7 +662,7 @@
     }
 
     #index-contact .index-contact-form .form-group {
-        margin-bottom: 30px;
+        margin-bottom: 1em;
     }
     #index-contact .index-contact-form .form-group input {
         height: 40px;
@@ -671,4 +671,116 @@
     #index-contact-text img {
         margin: 0px 25px;
     }
+}
+
+/*垂直居中*/
+.valign-wrapper {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.valign-wrapper .valign {
+    display: block;
+}
+
+/*垂直居中end*/
+
+/*底部contact格式*/
+
+.contact-box {
+    background: transparent url("../images/index/contact.jpg") no-repeat center center;
+
+}
+
+.contact-box h1 {
+    margin: 2em auto;
+}
+
+.inner-box {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-bottom: 6em;
+}
+
+.email {
+    width: 80%;
+}
+
+.email button {
+    width: auto;
+    height: 3em;
+    padding: 0 2em;
+    color: #1888CC;
+    font-weight: 100;
+}
+
+.subject, .message {
+    width: 100%;
+    background: rgba(255, 255, 255, .2);
+    border: none;
+    padding: .5em;
+}
+
+.inner-box button {
+    align-self: flex-start;
+}
+
+.subject {
+    margin: 0 auto 1em auto;
+}
+
+.icons {
+    display: none;
+}
+
+#button2 {
+    display: none;
+}
+
+@media screen and (min-width: 991px) {
+    .contact-box h1 {
+        margin: 1em auto;
+    }
+
+    #button1 {
+        display: none;
+    }
+
+    #button2 {
+        display: block;
+    }
+
+    .inner-box,
+    .button2 {
+        width: 80%;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .button2, .email, .icons {
+        padding: 1em;
+    }
+
+    .button2 {
+        padding-top: 0;
+        margin-bottom: 3em;
+    }
+
+    .email {
+        width: 60%;
+        order: 1;
+    }
+
+    .icons {
+        display: block;
+        width: 40%;
+        order: 2;
+    }
+
 }
