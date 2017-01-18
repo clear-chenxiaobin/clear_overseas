@@ -446,6 +446,19 @@ footer .container:last-child {
         color: #0186E1;
         border: 1px solid #0186E1;
     }
+
+    .safrai-wrap {
+        margin-top: 12%;
+        margin-left: 0 !important;
+        background: transparent !important;
+    }
+
+    .safrai-item {
+        background: #fff;
+        padding: 3px 3px 2px 3px;
+
+    }
+
 }
 
     /* ipad端*/

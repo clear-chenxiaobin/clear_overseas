@@ -24,7 +24,6 @@
     height: auto !important;
 }
 
-
 p {
     margin-bottom: 0;
 }
@@ -43,10 +42,9 @@ button {
     h1 {
         font-size: 20px !important;
     }
-    .divider {
-        margin-bottom: 0;
-    }
-
+    /*.divider {*/
+        /*margin-bottom: 0;*/
+    /*}*/
 }
 
 @media (min-width: 992px) {
@@ -196,9 +194,9 @@ button {
     }
     .list:before {
         left: 15px;
-        top: 60px;
+        top: 3em;
         width: 1px;
-        height: 40px;
+        height: 1.5em;
         background: #fff;
     }
 
