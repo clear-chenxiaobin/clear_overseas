@@ -72,6 +72,17 @@
     background: rgba(3, 29, 61, 0.59);
 }
 
+.case1 {
+    display: block;
+}
+
+.case1:hover {
+    cursor: pointer;
+}
+
+
+
+
 #index-project .index-case-box-text-content {
     top: 50%;
     transform: translateY(-50%);
@@ -689,6 +700,7 @@
 
 /*垂直居中end*/
 
+
 /*底部contact格式*/
 
 .contact-box {
@@ -744,6 +756,8 @@
 }
 
 @media screen and (min-width: 991px) {
+
+    /*底部contact格式*/
     .contact-box h1 {
         margin: 1em auto;
     }
@@ -784,6 +798,8 @@
     }
 }
 @media screen and (min-width: 1200px) {
+
+    /*底部contact格式*/
     .inner-box,
     .button2 {
         width: 60%;
