@@ -6,13 +6,14 @@
 
 h1 {
     font-family: "helvetica",Arial;
-    font-weight: normal !important;
+    font-weight: 100 !important;
     font-size: 14px;
 }
 
 img {
     width: 100%;
 }
+
 
 /*垂直居中*/
 .valign-wrapper {
