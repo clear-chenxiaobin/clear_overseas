@@ -261,6 +261,10 @@ footer .col-md-6:last-child,
     opacity: .2;
 }
 
+.view-btn:last-child .inner-btn:hover {
+    cursor: pointer;
+}
+
 footer .valign-wrapper {
     position: relative;
 }
@@ -307,6 +311,19 @@ footer {
 }
 footer .container:last-child {
     margin-top: 3em;
+}
+
+.continued {
+    display: none;
+    position: absolute;
+    bottom: 6em;
+    right: -9em;
+    color: black;
+    text-transform: uppercase;
+}
+
+.qidai:hover .continued {
+    display: block;
 }
 
 /*手机端*/
