@@ -120,11 +120,17 @@ img {
  轮播图样式
 ============================**/
 #features ul {
+    list-style-type: none ;
+}
+
+#features ul li span:before {
+    content: '';
     display: inline-block;
-    vertical-align: top;
-    list-style-type: disc;
-    color: #0186E1;
-    font-size: 26px;
+    width: .6em;
+    height: .6em;
+    border-radius: 50%;
+    background: #0186E1;
+    margin-right: 1em;
 }
 
 #features .swiper-container {
@@ -167,6 +173,7 @@ img {
 #features ul li span {
     color: #000000;
     font-size: 16px;
+    vertical-align: baseline;
 }
 
 #features section:nth-of-type(odd) {
@@ -352,13 +359,14 @@ footer .container:last-child {
         padding-left: 1em;
     }
     /*survey 部分 end*/
-    #features ul {
-        line-height: 1.1;
-    }
+    /*#features ul {*/
+        /*line-height: 1.1;*/
+    /*}*/
 
     #features ul li span {
         color: #000000;
         font-size: 12px;
+        vertical-align: middle;
     }
 
     #features section:nth-of-type(odd) .swiper-container {
@@ -368,6 +376,12 @@ footer .container:last-child {
     #features section:nth-of-type(2n) .swiper-container {
         margin-left: -4.5em;
     }
+
+    #features .swiper-pagination span {
+        height: 2px;
+    }
+
+
     /*console部分*/
 
 
