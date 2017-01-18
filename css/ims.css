@@ -109,21 +109,22 @@ img {
     font-size: 44px;
 }
 
-.hard-cap ul {
-    list-style-type: disc;
-    color: #0186E1;
-    font-size: 26px;
-}
-
+/*.hard-cap ul {*/
+    /*list-style-type: disc;*/
+    /*color: #0186E1;*/
+    /*font-size: 26px;*/
+/*}*/
 
 /**=========================
  轮播图样式
 ============================**/
-#features ul {
+#features ul,
+.hard-cap ul {
     list-style-type: none ;
 }
 
-#features ul li span:before {
+#features ul li span:before,
+.hard-cap li span:before {
     content: '';
     display: inline-block;
     width: .6em;
@@ -204,6 +205,8 @@ img {
 .hardware .text-left {
     color: rgba(0,0,0, .6);
 }
+
+
 
 .hard-cap li span {
     color: #000000;
