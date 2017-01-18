@@ -487,8 +487,8 @@ h2 {
     background: url(../images/caseDetail/arrow_phone.png) no-repeat center center #524f4f;
     display: none;
     position: absolute;
-    top: 30px;
-    left: 20px;
+    top: 20px;
+    left: 15px;
     border-radius: 50%;
     color: #fff;
     opacity: .6;
