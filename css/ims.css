@@ -313,19 +313,6 @@ footer .container:last-child {
     margin-top: 3em;
 }
 
-.continued {
-    display: none;
-    position: absolute;
-    bottom: 6em;
-    right: -9em;
-    color: black;
-    text-transform: uppercase;
-}
-
-.qidai:hover .continued {
-    display: block;
-}
-
 /*手机端*/
 @media (max-width: 768px) {
     .col-3 {
