@@ -182,10 +182,10 @@ a:active,a:link,a:visited {
 
 /* ---------------------------------------------case 开始-----------------------------------------------------*/
 
-* {
-    transition: all 1s;
-    animation: all 1s;
-}
+/** {
+    transition: all .5s;
+    animation: all .5s;
+}*/
 
 body {
     position: relative;
