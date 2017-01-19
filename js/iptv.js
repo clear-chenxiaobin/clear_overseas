@@ -44,7 +44,7 @@ $(document).ready(function() {
     galleryThumbs.params.control = galleryTop;
 
     // 小于等于768都判定为 移动端
-    if (screen.width < 768) {
+    if (screen.width <=768 || document.body.clientWidth <= 768) {
         var items = document.getElementsByClassName('iptv-menu-item-title');
         for (var i = 0; i < items.length; i++) {
             // items[i].parentNode.insertBefore(items[i], items[i].parentNode.firstChild);
