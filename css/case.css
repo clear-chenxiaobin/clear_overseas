@@ -8,7 +8,8 @@ h6,
 hr,
 p,
 blockquote,
-    /* structural elemenus 结构元素 */
+
+/* structural elemenus 结构元素 */
 
 dl,
 dt,
@@ -16,17 +17,20 @@ dd,
 ul,
 ol,
 li,
-    /* list elements 列表元素 */
+
+/* list elements 列表元素 */
 
 pre,
-    /* text formatting elements 文本格式元素 */
+
+/* text formatting elements 文本格式元素 */
 
 fieldset,
 lengend,
 button,
 input,
 textarea,
-    /* form elements 表单元素 */
+
+/* form elements 表单元素 */
 
 th,
 td {
@@ -34,6 +38,8 @@ td {
     margin: 0;
     padding: 0;
 }
+
+
 /* 设置默认字体 */
 
 body,
@@ -73,6 +79,8 @@ em,
 var {
     font-style: normal;
 }
+
+
 /* 将斜体扶正 */
 
 code,
@@ -82,18 +90,26 @@ samp,
 tt {
     font-family: 'Courier New', Courier, monospace;
 }
+
+
 /* 统一等宽字体 */
 
 small {
     font-size: 12px;
 }
+
+
 /* 小于 12px 的中文很难阅读，让 small 正常化 */
+
+
 /* 重置列表元素 */
 
 ul,
 ol {
     list-style: none;
 }
+
+
 /* 重置文本格式元素 */
 
 a {
@@ -115,18 +131,26 @@ q:before,
 q:after {
     content: '';
 }
+
+
 /* 重置表单元素 */
 
 legend {
     color: #000;
 }
+
+
 /* for ie6 */
 
 fieldset,
 img {
     border: none;
 }
+
+
 /* img 搭车：让链接里的 img 无边框 */
+
+
 /* 注：optgroup 无法扶正 */
 
 button,
@@ -136,18 +160,24 @@ textarea {
     font-size: 100%;
     /* 使得表单元素在 ie 下能继承字体大小 */
 }
+
+
 /* 重置表格元素 */
 
 table {
     border-spacing: 0;
     border-collapse: collapse;
 }
+
+
 /* 重置 hr */
 
 hr {
     height: 1px;
     border: none;
 }
+
+
 /* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
 
 html {
@@ -155,34 +185,34 @@ html {
 }
 
 
-
 /* ----------------cases部分 和 iptv 页面--------------------*/
-a:active,a:link,a:visited {
+
+a:active,
+a:link,
+a:visited {
     text-decoration: none;
 }
+
 #footer-copyright {
     position: relative;
-    left:50%;
-    margin-left:-100px;
-    margin-top:50px;
-    width:200px;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: 50px;
+    width: 200px;
 }
 
 #footer-copyright small {
-    color:#828282;
+    color: #828282;
 }
 
 #page {
     overflow-x: hidden;
-    overflow-y:hidden;
+    overflow-y: hidden;
 }
 
-.container.caseList #footer-copyright small{
-    color:#828282;
+.container.caseList #footer-copyright small {
+    color: #828282;
 }
-
-
-
 
 
 /* ---------------------------------------------case 开始-----------------------------------------------------*/
@@ -212,6 +242,8 @@ body {
     background-color: rgba(0, 12, 26, 1);
     background: #000b19;
 }
+
+
 /* inline-block左右间距问题*/
 
 .caseList ul.cases {
@@ -221,6 +253,8 @@ body {
     margin-top: 80px;
     padding-left: 0;
 }
+
+
 /* 3像素问题*/
 
 .caseList ul.cases li {
@@ -231,17 +265,17 @@ body {
     width: 33.33%;
 }
 
-.caseList ul.cases li .case_mask  {
-    opacity:0;
+.caseList ul.cases li .case_mask {
+    opacity: 0;
 }
 
-.caseList ul.cases li:hover .case_mask  {
-    opacity:1;
+.caseList ul.cases li:hover .case_mask {
+    opacity: 1;
 }
 
 .caseList ul.cases li img {
     width: 100%;
-    height:100%;
+    height: 100%;
     display: inline-block;
 }
 
@@ -266,8 +300,7 @@ body {
     color: #fff;
 }
 
-
-.container.caseList  div.ca_txt{
+.container.caseList div.ca_txt {
     line-height: 29px;
     margin-top: 164px;
     font-size: 24px;
@@ -275,17 +308,20 @@ body {
     color: #ffffff;
     letter-spacing: 0;
 }
-.caseList #page .percase.case1  div.ca_txt {
+
+.caseList #page .percase.case1 div.ca_txt {
     margin-top: 120px;
 }
-.container.caseList  div.ca_txt h2{
+
+.container.caseList div.ca_txt h2 {
     color: #ffffff;
 }
-
 
 h2 {
     font-size: 28px !important;
 }
+
+
 /*底部出现的loading*/
 
 .ui-loader-default {
@@ -315,16 +351,16 @@ h2 {
     padding: 9px;
     font-size: 20px;
     font-family: helvetica;
-    color:#fff;
+    color: #fff;
 }
+
+
 /*手机端 768以下 就当作手机端*/
 
 @media screen and (max-width: 768px) {
-
-    .caseList ul.cases li .case_mask  {
-        opacity:1;
+    .caseList ul.cases li .case_mask {
+        opacity: 1;
     }
-
     .ca_pagehead {
         font-size: 28px;
         margin: 213px auto 0;
@@ -335,7 +371,7 @@ h2 {
         font-size: 38px;
         color: #FFFFFF;
         letter-spacing: -0.63px;
-        text-align:left;
+        text-align: left;
     }
     .caseList {
         width: 100%;
@@ -393,7 +429,11 @@ h2 {
         font-size: 20px !important;
     }
 }
+
+
 /* ---------------------------------------------case 结束-----------------------------------------------------*/
+
+
 /* ---.------------------------------------------caseDetail 开始-----------------------------------------------------*/
 
 .ca-slide-img {
@@ -406,10 +446,14 @@ h2 {
     background: #fff;
     color: #000;
 }
+
+
 /* div.ca-slide-text {
     background-color: #fff;
     color:#000;
 }*/
+
+
 /*.myCarousel {
    position: fixed;
    overflow: hidden;
@@ -435,6 +479,8 @@ h2 {
 .myCarousel {
     color: #000;
 }
+
+
 /*弹出框 垂直水平都居中*/
 
 .modal .modal-dialog.modal-lg {
@@ -521,7 +567,7 @@ h2 {
 }
 
 #myCarousel .carousel-inner >.item>.row {
-    border:1px solid
+    border: 1px solid
 }
 
 #myCarousel .carousel-inner .item .ca-model-item-text .h2 {
@@ -549,7 +595,9 @@ h2 {
     border: 0px;
 }
 
+
 /*@media screen and (max-width: 1920px) {*/
+
 .ca-modal-item-1,
 .ca-modal-item-2,
 .ca-modal-item-3,
@@ -558,12 +606,15 @@ h2 {
 .ca-modal-item-6 {
     width: 748px;
 }
+
 .ca-modal-dialog {
     width: 80%;
 }
+
 .ca-model-item-img {
     width: 55%;
 }
+
 .modal-body .ca-model-item-text {
     width: 45%;
     padding: 20px;
@@ -572,9 +623,12 @@ h2 {
     top: 50%;
     transform: translateY(-50%);
 }
+
 .modal-body .ca-model-item-text p {
     line-height: 18px;
 }
+
+
 /*}*/
 
 @media screen and (max-width: 1280px) {
@@ -664,6 +718,11 @@ h2 {
 }
 
 @media screen and (max-width: 414px) {
+    .ca_case_head {}
+    .ca_case_list {}
+    .ca_pagehead {
+        margin-top: 153px;
+    }
     #myCarousel .carousel-inner .item .ca-model-item-text .h2 {
         margin-bottom: 20px;
     }
@@ -676,6 +735,12 @@ h2 {
     }
     .ca-carousel-indicators {
         bottom: 50px;
+        position: absolute;
+    }
+    .caseList ul.cases {
+        margin-top: 20px;
     }
 }
+
+
 /****************

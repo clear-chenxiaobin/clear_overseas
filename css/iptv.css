@@ -354,6 +354,11 @@ h2 {
         padding: 0px 5px;
         font-size: 16px;
     }
+    
+
+
+
+
 }
 
 @media screen and (max-width: 414px) {
@@ -1241,11 +1246,23 @@ h2 {
         line-height: 20px;
      }
      .iptv-case4-txt {
-        font-size: 31px;
-        left:0;
-        top:70%;
-        transform: translateY(0);
+         font-size: 31px;
+         left: 0;
+         top: 70%;
+         transform: translateY(0);
      }
+     
+     .iptv-case4-viewmore>a {
+         display: block;
+         color: #0186E1;
+         margin: 10px auto;
+         width: 70px;
+     }
+
+     .iptv-greeting-ul li {
+         list-style-position: outside;
+     }
+
 
  }
  
