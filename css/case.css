@@ -210,7 +210,7 @@ a:visited {
     overflow-y: hidden;
 }
 
-.container.caseList #footer-copyright small {
+.caseList #footer-copyright small {
     color: #828282;
 }
 
@@ -300,7 +300,7 @@ body {
     color: #fff;
 }
 
-.container.caseList div.ca_txt {
+.caseList div.ca_txt {
     line-height: 29px;
     margin-top: 164px;
     font-size: 24px;
@@ -313,7 +313,7 @@ body {
     margin-top: 120px;
 }
 
-.container.caseList div.ca_txt h2 {
+.caseList div.ca_txt h2 {
     color: #ffffff;
 }
 
