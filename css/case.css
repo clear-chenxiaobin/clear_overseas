@@ -708,9 +708,10 @@ h2 {
         line-height: 11px;
     }
     .carousel-indicators .active {
-        width: 12px;
-        height: 12px;
+        width: 11px;
+        height: 11px;
         background-color: #0288E6;
+        margin:1px;
     }
     .modal-body .ca-model-item-text {
         overflow-y: auto;
