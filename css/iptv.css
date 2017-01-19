@@ -1212,7 +1212,8 @@ h2 {
          margin-top:25px;
      }
      .iptv-case2, .iptv-case3 {
-        margin-top:20px;
+        margin-top:50px;
+        height: auto;
      }
 
      .iptv-case4-content {
@@ -1273,9 +1274,14 @@ h2 {
      .iptv-banner .iptv-banner-txt.h2 {
          line-height: 300px;
      }
-     .iptv-hardware-items4-img {
 
+     .iptv-greeting-ul {
+         margin-top: 10px;
+         display: inline-block;
+         margin-left: 45px;
      }
+
+
 
 
  }
